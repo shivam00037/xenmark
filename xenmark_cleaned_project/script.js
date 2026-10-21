@@ -4,6 +4,22 @@
    Keep image paths, image rotations, and the hero video poster in one place.
 ===================================================== */
 window.xenmarkMediaData = {};
+
+// Lightweight mobile mode: disable auto-running visual effects on small screens.
+// Scroll-reveal and the XENMARK logo loading screen are intentionally preserved.
+function xenmarkIsMobilePerfMode() {
+    return window.matchMedia("(max-width: 700px)").matches;
+}
+
+// Background videos can be costly on phones. Keep their poster/image visible instead.
+if (xenmarkIsMobilePerfMode()) {
+    document.querySelectorAll("video").forEach(function (video) {
+        video.pause();
+        video.removeAttribute("autoplay");
+        video.setAttribute("preload", "none");
+    });
+}
+
 window.xenmarkMediaDataPromise = fetch("./data.json")
     .then(function (response) {
         if (!response.ok) {
@@ -19,6 +35,17 @@ window.xenmarkMediaDataPromise = fetch("./data.json")
             const mediaKey = element.getAttribute("data-json-src");
             const mediaPath = data[mediaKey];
             if (mediaPath) {
+                // Defer off-screen image downloads on all devices, especially phones.
+                // Keep the first hero image eager so the opening view stays immediate.
+                if (element.tagName && element.tagName.toLowerCase() === "img") {
+                    element.setAttribute("decoding", "async");
+                    if (mediaKey === "media_1") {
+                        element.setAttribute("loading", "eager");
+                        element.setAttribute("fetchpriority", "high");
+                    } else {
+                        element.setAttribute("loading", "lazy");
+                    }
+                }
                 element.setAttribute("src", mediaPath);
             }
         });
@@ -41,6 +68,13 @@ window.xenmarkMediaDataPromise = fetch("./data.json")
 
         // Reload video elements after their source paths have been assigned.
         document.querySelectorAll("video").forEach(function (video) {
+            if (xenmarkIsMobilePerfMode()) {
+                video.pause();
+                video.removeAttribute("autoplay");
+                video.setAttribute("preload", "none");
+                return;
+            }
+
             if (video.querySelector("source[src]")) {
                 video.load();
             }
@@ -241,7 +275,7 @@ const heroSlogans = [
 let heroIndex = 0;
 
 
-setInterval(
+if (!xenmarkIsMobilePerfMode()) setInterval(
     function(){
 
         const element =
@@ -311,6 +345,9 @@ document
 
         let index = 0;
 
+        if (xenmarkIsMobilePerfMode()) {
+            return;
+        }
 
         setInterval(
             function(){
@@ -369,7 +406,7 @@ window.xenmarkMediaDataPromise.then(function (data) {
         const setKey = image.getAttribute("data-json-set");
         const images = data._image_sets && data._image_sets[setKey];
 
-        if (!Array.isArray(images) || images.length < 2) {
+        if (!Array.isArray(images) || images.length < 2 || xenmarkIsMobilePerfMode()) {
             return;
         }
 
@@ -437,7 +474,7 @@ function changeBanner(index){
 }
 
 
-setInterval(
+if (!xenmarkIsMobilePerfMode()) setInterval(
     function(){
 
         bannerIndex++;
@@ -691,7 +728,7 @@ Tell us about design:
 ${message}`;
 
         const whatsappURL =
-            "https://wa.me/6387731661?text=" +
+            "https://wa.me/919876543210?text=" +
             encodeURIComponent(text);
 
         window.open(
@@ -952,6 +989,10 @@ new Date().getFullYear();
                             ){
 
                                 started = true;
+
+                                if (xenmarkIsMobilePerfMode()) {
+                                    return;
+                                }
 
                                 let index = 0;
 
@@ -1324,7 +1365,10 @@ new Date().getFullYear();
 
     function restartCrazyBannerTimer(){
         window.clearInterval(crazyBannerTimer);
-        crazyBannerTimer = window.setInterval(nextCrazyBanner,3000);
+        crazyBannerTimer = null;
+        if (!xenmarkIsMobilePerfMode()) {
+            crazyBannerTimer = window.setInterval(nextCrazyBanner,3000);
+        }
     }
 
     dots.forEach(function(dot){
@@ -1406,7 +1450,7 @@ new Date().getFullYear();
         .map(function(word){ return word.trim(); })
         .filter(Boolean);
 
-    if(!words.length){
+    if(!words.length || xenmarkIsMobilePerfMode()){
         return;
     }
 
@@ -1449,9 +1493,11 @@ new Date().getFullYear();
 
     activate(0);
 
-    window.setInterval(function(){
-        activate((index + 1) % cards.length);
-    },3000);
+    if (!xenmarkIsMobilePerfMode()) {
+        window.setInterval(function(){
+            activate((index + 1) % cards.length);
+        },3000);
+    }
 })();
 
 /* Cyberpunk loading transition. */
