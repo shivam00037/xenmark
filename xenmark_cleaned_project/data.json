@@ -1,0 +1,311 @@
+{
+    "media_1": "images/1790268078480.png",
+    "media_2": "images/1790268460189.png",
+    "media_3": "images/1790268474431.png",
+    "media_4": "images/1790268625977.png",
+    "media_5": "images/1790268787761.png",
+    "media_6": "images/1790268795813.png",
+    "media_7": "images/819737909_1760957765163257_2397376187141936728_n.webp.jpg.jpeg",
+    "media_8": "images/819742716_1042027318804155_7071385818661242842_n.webp.jpg.jpeg",
+    "media_9": "images/819785070_2189498708296751_5861010133351800837_n.webp.jpg.jpeg",
+    "media_10": "images/820037082_4571719243043179_616522787856093108_n.webp.jpg.jpeg",
+    "media_11": "images/820093875_950684284751060_6984922918497447566_n.webp.jpg.jpeg",
+    "media_12": "images/820147586_1721425842421636_4659654549758353642_n.webp.jpg.jpeg",
+    "media_13": "images/820180807_1764853204957525_3794560847452058429_n.webp.jpg.jpeg",
+    "media_14": "images/820251415_2429577994239238_9172291451690460702_n.webp.jpg.jpeg",
+    "media_15": "images/820294224_1589326912687698_4028302288816644305_n.webp.jpg.jpeg",
+    "media_16": "images/820294232_1581129897120756_8751051569564089325_n.webp.jpg.jpeg",
+    "media_17": "images/820357421_2435196187005629_1614779465162435249_n.webp.jpg.jpeg",
+    "media_18": "images/820374461_1451153856832536_2987389819150359875_n.webp.jpg.jpeg",
+    "media_19": "images/820459085_1457158229594920_7206810034364467846_n.webp.jpg.jpeg",
+    "media_20": "images/820501276_4750161268563080_9177302320547941691_n.webp.jpg.jpeg",
+    "media_21": "images/821123777_1576313644239990_1872315745174343373_n.webp.jpg.jpeg",
+    "media_22": "images/821151638_3541888802636532_9119229174355170793_n.webp.jpg.jpeg",
+    "media_23": "images/821196242_2882495508773432_8174679227750382310_n.webp.jpg.jpeg",
+    "media_24": "images/821213181_3328923060626748_2923141258729044042_n.webp.jpg.jpeg",
+    "media_25": "images/821405605_1659894682222929_2543533970684125669_n.webp.jpg.jpeg",
+    "media_26": "images/821420193_1088709577455939_1596603966248000354_n.webp.jpg.jpeg",
+    "media_27": "images/821478620_1083663544067179_6432712972818722543_n.webp.jpg.jpeg",
+    "media_28": "images/821530047_1405767691088297_806257444002420665_n.webp.jpg.jpeg",
+    "media_29": "images/821538240_1648551716982823_4314220906218539805_n.webp.jpg.jpeg",
+    "media_30": "images/821621681_1453607269949837_717628968367645536_n.webp.jpg.jpeg",
+    "media_31": "images/821729402_1623030209553592_7439798214169088357_n.webp.jpg.jpeg",
+    "media_32": "images/822128620_1075837805221488_5056351691516164164_n.webp.jpg.jpeg",
+    "media_33": "images/822286072_1795445374989816_6086027791071956335_n.webp.jpg.jpeg",
+    "media_34": "images/822286077_1407281961373837_2272280886895980524_n.webp.jpg.jpeg",
+    "media_35": "images/822333243_1773844813949415_6862652434924488469_n.webp.jpg.jpeg",
+    "media_36": "images/823091709_1806904273669327_1738391198634612267_n.webp.jpg.jpeg",
+    "media_37": "images/824023436_1029694400084489_6208288798356308980_n.webp.jpg.jpeg",
+    "media_38": "images/824023442_1609294614075501_7839966388780411591_n.webp.jpg.jpeg",
+    "media_39": "images/824157655_1651539296603348_23535979312599668_n.webp.jpg.jpeg",
+    "media_40": "images/824389595_1370639671762963_4454709748195422932_n.webp.jpg.jpeg",
+    "media_41": "images/824693722_1818089025850233_3558542270411567117_n.webp.jpg.jpeg",
+    "media_42": "images/825273193_1783555106027719_785390060906227264_n.webp.jpg.jpeg",
+    "media_43": "images/825273261_1107085981735339_6835416421652483416_n.webp.jpg.jpeg",
+    "media_44": "images/825273264_1045667614910424_3229069049496150991_n.webp.jpg.jpeg",
+    "media_45": "images/825274003_1410696573835184_5051814984004467585_n.webp.jpg.jpeg",
+    "media_46": "images/825352949_3208258282713230_2790179720310189616_n.webp.jpg.jpeg",
+    "media_47": "https://cdn.coverr.co/videos/coverr-a-man-in-a-jacket-1576/1080p.mp4",
+    "media_48": "images/825353052_1721044376690685_3280050168279808047_n.webp.jpg.jpeg",
+    "media_49": "images/833275338_1658521559189206_620612982053690446_n.webp.jpg.jpeg",
+    "media_50": "images/833990542_1773401780569232_45715094339345924_n.webp.jpg.jpeg",
+    "media_51": "images/835757816_1651729486343872_3886351216820769007_n.webp.jpg.jpeg",
+    "texture_noise": "https://grainy-gradients.vercel.app/noise.svg",
+    "_image_notes": {
+        "media_1": "Hero section — large floating custom-apparel image on the right side of the first screen.",
+        "media_2": "First showcase card — T-shirt image; also used in the rotating showcase card image set.",
+        "media_3": "Second showcase card — apparel/hoodie-style card image; also used in its local image rotation.",
+        "media_4": "Third showcase card — sports/teamwear card image; also used in its local image rotation.",
+        "media_5": "Fourth showcase card — sportswear/apparel card image; also used in a local image rotation.",
+        "media_6": "Fifth showcase card — accessory/cap-style card image; also used in a local image rotation.",
+        "media_7": "Visual introduction section — image beside the section copy; also rotates among local lifestyle/product images.",
+        "media_8": "Collection banner — first wide banner slide.",
+        "media_9": "Collection banner — second wide banner slide.",
+        "media_10": "Collection banner — third wide banner slide.",
+        "media_11": "Product grid — product card 01.",
+        "media_12": "Product grid — product card 02.",
+        "media_13": "Product grid — product card 03.",
+        "media_14": "Product grid — product card 04.",
+        "media_15": "Additional apparel showcase — first card; rotates among local images.",
+        "media_16": "Additional apparel showcase — second card; rotates among local images.",
+        "media_17": "Additional apparel showcase — third card; rotates among local images.",
+        "media_18": "Additional apparel showcase — fourth card; rotates among local images.",
+        "media_19": "Additional apparel showcase — fifth card; rotates among local images.",
+        "media_20": "Arsenal/product selector — default product image before a product choice is selected.",
+        "media_21": "Crazy-style product chooser — tile 01; local image rotation.",
+        "media_22": "Crazy-style product chooser — tile 02; local image rotation.",
+        "media_23": "Crazy-style product chooser — tile 03; local image rotation.",
+        "media_24": "Crazy-style product chooser — tile 04; local image rotation.",
+        "media_25": "Crazy-style product chooser — tile 05; local image rotation.",
+        "media_26": "Crazy-style product chooser — tile 06; local image rotation.",
+        "media_27": "Crazy-style product chooser — tile 07; local image rotation.",
+        "media_28": "Crazy-style product chooser — tile 08; local image rotation.",
+        "media_29": "Animated Crazy Drop banner — slide 01, “WEAR THE SIGNAL”.",
+        "media_30": "Animated Crazy Drop banner — slide 02, “CREATE YOUR PIECE”.",
+        "media_31": "Animated Crazy Drop banner — slide 03.",
+        "media_32": "Animated collection rail — DROP 01 / NEON FORM card.",
+        "media_33": "Animated collection rail — DROP 02 / STREET CORE card.",
+        "media_34": "Animated collection rail — DROP 03 / BLACK LAYER card.",
+        "media_35": "Animated collection rail — DROP 04 / TEAM FORCE card.",
+        "media_36": "Animated collection rail — DROP 05 / CAP SIGNAL card.",
+        "media_37": "Animated collection rail — DROP 06 / EDGE card.",
+        "media_38": "Gallery section — gallery tile 01; rotates among local apparel images.",
+        "media_39": "Gallery section — gallery tile 02; rotates among local apparel images.",
+        "media_40": "Gallery section — gallery tile 03; rotates among local apparel images.",
+        "media_41": "Gallery section — gallery tile 04; rotates among local apparel images.",
+        "media_42": "Gallery section — gallery tile 05; rotates among local apparel images.",
+        "media_43": "Gallery section — gallery tile 06; rotates among local apparel images.",
+        "media_44": "Final apparel showcase — sportswear card; rotates among local images.",
+        "media_45": "Final apparel showcase — accessory/cap-style card; rotates among local images.",
+        "media_46": "Customizer section — starting preview image; also used as an embroidery-treatment preview.",
+        "media_47": "Hero section — background video file. This is a video, not an image; the URL remains in data.json.",
+        "media_48": "Additional uploaded red T-shirt image; used in the customizer/rotating local image sets.",
+        "media_49": "Additional uploaded lifestyle/model image; used as the hero video poster and in local image sets.",
+        "media_50": "Additional uploaded lifestyle/model image; available to gallery and local rotating image sets.",
+        "media_51": "Additional uploaded lifestyle/model image; available to gallery and local rotating image sets.",
+        "texture_noise": "Subtle grain texture for the fixed page overlay; stored here to keep CSS free of a hardcoded image URL."
+    },
+    "_image_sets": {
+        "media_2": [
+            "images/1790268460189.png",
+            "images/1790268474431.png",
+            "images/1790268625977.png"
+        ],
+        "media_3": [
+            "images/1790268474431.png",
+            "images/1790268625977.png",
+            "images/1790268787761.png"
+        ],
+        "media_4": [
+            "images/1790268625977.png",
+            "images/1790268787761.png",
+            "images/1790268795813.png"
+        ],
+        "media_5": [
+            "images/1790268787761.png",
+            "images/1790268795813.png",
+            "images/825353052_1721044376690685_3280050168279808047_n.webp.jpg.jpeg"
+        ],
+        "media_6": [
+            "images/1790268795813.png",
+            "images/825353052_1721044376690685_3280050168279808047_n.webp.jpg.jpeg",
+            "images/1790268078480.png"
+        ],
+        "media_7": [
+            "images/819737909_1760957765163257_2397376187141936728_n.webp.jpg.jpeg",
+            "images/819742716_1042027318804155_7071385818661242842_n.webp.jpg.jpeg",
+            "images/819785070_2189498708296751_5861010133351800837_n.webp.jpg.jpeg"
+        ],
+        "media_11": [
+            "images/820093875_950684284751060_6984922918497447566_n.webp.jpg.jpeg",
+            "images/820147586_1721425842421636_4659654549758353642_n.webp.jpg.jpeg",
+            "images/820180807_1764853204957525_3794560847452058429_n.webp.jpg.jpeg"
+        ],
+        "media_12": [
+            "images/820147586_1721425842421636_4659654549758353642_n.webp.jpg.jpeg",
+            "images/820180807_1764853204957525_3794560847452058429_n.webp.jpg.jpeg",
+            "images/820251415_2429577994239238_9172291451690460702_n.webp.jpg.jpeg"
+        ],
+        "media_13": [
+            "images/820180807_1764853204957525_3794560847452058429_n.webp.jpg.jpeg",
+            "images/820251415_2429577994239238_9172291451690460702_n.webp.jpg.jpeg",
+            "images/820294224_1589326912687698_4028302288816644305_n.webp.jpg.jpeg"
+        ],
+        "media_14": [
+            "images/820251415_2429577994239238_9172291451690460702_n.webp.jpg.jpeg",
+            "images/820294224_1589326912687698_4028302288816644305_n.webp.jpg.jpeg",
+            "images/820294232_1581129897120756_8751051569564089325_n.webp.jpg.jpeg"
+        ],
+        "media_15": [
+            "images/820294224_1589326912687698_4028302288816644305_n.webp.jpg.jpeg",
+            "images/820294232_1581129897120756_8751051569564089325_n.webp.jpg.jpeg",
+            "images/820357421_2435196187005629_1614779465162435249_n.webp.jpg.jpeg"
+        ],
+        "media_16": [
+            "images/820294232_1581129897120756_8751051569564089325_n.webp.jpg.jpeg",
+            "images/820357421_2435196187005629_1614779465162435249_n.webp.jpg.jpeg",
+            "images/820374461_1451153856832536_2987389819150359875_n.webp.jpg.jpeg"
+        ],
+        "media_17": [
+            "images/820357421_2435196187005629_1614779465162435249_n.webp.jpg.jpeg",
+            "images/820374461_1451153856832536_2987389819150359875_n.webp.jpg.jpeg",
+            "images/820459085_1457158229594920_7206810034364467846_n.webp.jpg.jpeg"
+        ],
+        "media_18": [
+            "images/820374461_1451153856832536_2987389819150359875_n.webp.jpg.jpeg",
+            "images/820459085_1457158229594920_7206810034364467846_n.webp.jpg.jpeg",
+            "images/820501276_4750161268563080_9177302320547941691_n.webp.jpg.jpeg"
+        ],
+        "media_19": [
+            "images/820459085_1457158229594920_7206810034364467846_n.webp.jpg.jpeg",
+            "images/820501276_4750161268563080_9177302320547941691_n.webp.jpg.jpeg",
+            "images/820093875_950684284751060_6984922918497447566_n.webp.jpg.jpeg"
+        ],
+        "media_21": [
+            "images/821123777_1576313644239990_1872315745174343373_n.webp.jpg.jpeg",
+            "images/821151638_3541888802636532_9119229174355170793_n.webp.jpg.jpeg",
+            "images/821196242_2882495508773432_8174679227750382310_n.webp.jpg.jpeg"
+        ],
+        "media_22": [
+            "images/821151638_3541888802636532_9119229174355170793_n.webp.jpg.jpeg",
+            "images/821196242_2882495508773432_8174679227750382310_n.webp.jpg.jpeg",
+            "images/821213181_3328923060626748_2923141258729044042_n.webp.jpg.jpeg"
+        ],
+        "media_23": [
+            "images/821196242_2882495508773432_8174679227750382310_n.webp.jpg.jpeg",
+            "images/821213181_3328923060626748_2923141258729044042_n.webp.jpg.jpeg",
+            "images/821405605_1659894682222929_2543533970684125669_n.webp.jpg.jpeg"
+        ],
+        "media_24": [
+            "images/821213181_3328923060626748_2923141258729044042_n.webp.jpg.jpeg",
+            "images/821405605_1659894682222929_2543533970684125669_n.webp.jpg.jpeg",
+            "images/821420193_1088709577455939_1596603966248000354_n.webp.jpg.jpeg"
+        ],
+        "media_25": [
+            "images/821405605_1659894682222929_2543533970684125669_n.webp.jpg.jpeg",
+            "images/821420193_1088709577455939_1596603966248000354_n.webp.jpg.jpeg",
+            "images/821478620_1083663544067179_6432712972818722543_n.webp.jpg.jpeg"
+        ],
+        "media_26": [
+            "images/821420193_1088709577455939_1596603966248000354_n.webp.jpg.jpeg",
+            "images/821478620_1083663544067179_6432712972818722543_n.webp.jpg.jpeg",
+            "images/821530047_1405767691088297_806257444002420665_n.webp.jpg.jpeg"
+        ],
+        "media_27": [
+            "images/821478620_1083663544067179_6432712972818722543_n.webp.jpg.jpeg",
+            "images/821530047_1405767691088297_806257444002420665_n.webp.jpg.jpeg",
+            "images/825353052_1721044376690685_3280050168279808047_n.webp.jpg.jpeg"
+        ],
+        "media_28": [
+            "images/821530047_1405767691088297_806257444002420665_n.webp.jpg.jpeg",
+            "images/825353052_1721044376690685_3280050168279808047_n.webp.jpg.jpeg",
+            "images/833275338_1658521559189206_620612982053690446_n.webp.jpg.jpeg"
+        ],
+        "media_38": [
+            "images/824023442_1609294614075501_7839966388780411591_n.webp.jpg.jpeg",
+            "images/824157655_1651539296603348_23535979312599668_n.webp.jpg.jpeg",
+            "images/824389595_1370639671762963_4454709748195422932_n.webp.jpg.jpeg"
+        ],
+        "media_39": [
+            "images/824157655_1651539296603348_23535979312599668_n.webp.jpg.jpeg",
+            "images/824389595_1370639671762963_4454709748195422932_n.webp.jpg.jpeg",
+            "images/824693722_1818089025850233_3558542270411567117_n.webp.jpg.jpeg"
+        ],
+        "media_40": [
+            "images/824389595_1370639671762963_4454709748195422932_n.webp.jpg.jpeg",
+            "images/824693722_1818089025850233_3558542270411567117_n.webp.jpg.jpeg",
+            "images/825273193_1783555106027719_785390060906227264_n.webp.jpg.jpeg"
+        ],
+        "media_41": [
+            "images/824693722_1818089025850233_3558542270411567117_n.webp.jpg.jpeg",
+            "images/825273193_1783555106027719_785390060906227264_n.webp.jpg.jpeg",
+            "images/825273261_1107085981735339_6835416421652483416_n.webp.jpg.jpeg"
+        ],
+        "media_42": [
+            "images/825273193_1783555106027719_785390060906227264_n.webp.jpg.jpeg",
+            "images/825273261_1107085981735339_6835416421652483416_n.webp.jpg.jpeg",
+            "images/825273264_1045667614910424_3229069049496150991_n.webp.jpg.jpeg"
+        ],
+        "media_43": [
+            "images/825273261_1107085981735339_6835416421652483416_n.webp.jpg.jpeg",
+            "images/825273264_1045667614910424_3229069049496150991_n.webp.jpg.jpeg",
+            "images/825274003_1410696573835184_5051814984004467585_n.webp.jpg.jpeg"
+        ],
+        "media_44": [
+            "images/825273264_1045667614910424_3229069049496150991_n.webp.jpg.jpeg",
+            "images/825274003_1410696573835184_5051814984004467585_n.webp.jpg.jpeg",
+            "images/825352949_3208258282713230_2790179720310189616_n.webp.jpg.jpeg"
+        ],
+        "media_45": [
+            "images/825274003_1410696573835184_5051814984004467585_n.webp.jpg.jpeg",
+            "images/825352949_3208258282713230_2790179720310189616_n.webp.jpg.jpeg",
+            "images/825353052_1721044376690685_3280050168279808047_n.webp.jpg.jpeg"
+        ]
+    },
+    "_image_set_notes": {
+        "media_2": "First showcase card — T-shirt image; also used in the rotating showcase card image set.",
+        "media_3": "Second showcase card — apparel/hoodie-style card image; also used in its local image rotation.",
+        "media_4": "Third showcase card — sports/teamwear card image; also used in its local image rotation.",
+        "media_5": "Fourth showcase card — sportswear/apparel card image; also used in a local image rotation.",
+        "media_6": "Fifth showcase card — accessory/cap-style card image; also used in a local image rotation.",
+        "media_7": "Visual introduction section — image beside the section copy; also rotates among local lifestyle/product images.",
+        "media_11": "Product grid — product card 01.",
+        "media_12": "Product grid — product card 02.",
+        "media_13": "Product grid — product card 03.",
+        "media_14": "Product grid — product card 04.",
+        "media_15": "Additional apparel showcase — first card; rotates among local images.",
+        "media_16": "Additional apparel showcase — second card; rotates among local images.",
+        "media_17": "Additional apparel showcase — third card; rotates among local images.",
+        "media_18": "Additional apparel showcase — fourth card; rotates among local images.",
+        "media_19": "Additional apparel showcase — fifth card; rotates among local images.",
+        "media_21": "Crazy-style product chooser — tile 01; local image rotation.",
+        "media_22": "Crazy-style product chooser — tile 02; local image rotation.",
+        "media_23": "Crazy-style product chooser — tile 03; local image rotation.",
+        "media_24": "Crazy-style product chooser — tile 04; local image rotation.",
+        "media_25": "Crazy-style product chooser — tile 05; local image rotation.",
+        "media_26": "Crazy-style product chooser — tile 06; local image rotation.",
+        "media_27": "Crazy-style product chooser — tile 07; local image rotation.",
+        "media_28": "Crazy-style product chooser — tile 08; local image rotation.",
+        "media_38": "Gallery section — gallery tile 01; rotates among local apparel images.",
+        "media_39": "Gallery section — gallery tile 02; rotates among local apparel images.",
+        "media_40": "Gallery section — gallery tile 03; rotates among local apparel images.",
+        "media_41": "Gallery section — gallery tile 04; rotates among local apparel images.",
+        "media_42": "Gallery section — gallery tile 05; rotates among local apparel images.",
+        "media_43": "Gallery section — gallery tile 06; rotates among local apparel images.",
+        "media_44": "Final apparel showcase — sportswear card; rotates among local images.",
+        "media_45": "Final apparel showcase — accessory/cap-style card; rotates among local images."
+    },
+    "_customizer_images": {
+        "apparel": {
+            "T-SHIRT": "media_2",
+            "HOODIE": "media_3",
+            "JERSEY": "media_4",
+            "CAP": "media_6"
+        },
+        "treatment": {
+            "DTF": "media_5",
+            "EMBROIDERY": "media_46",
+            "BOTH": "media_49"
+        }
+    }
+}

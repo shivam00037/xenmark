@@ -1,0 +1,4396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>XENMARK | Custom Apparel</title>
+
+
+<!-- =====================================================
+     FONTS
+===================================================== -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link
+href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Rajdhani:wght@400;500;600;700&family=Share+Tech+Mono&display=swap"
+rel="stylesheet">
+
+
+<!-- =====================================================
+     FONT AWESOME
+===================================================== -->
+
+<link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+<!-- =====================================================
+     XENMARK CYBERPUNK LOADING TRANSITION
+===================================================== -->
+<div class="xenmark-loader" id="xenmarkLoader" aria-hidden="true">
+    <div class="xenmark-loader-noise"></div>
+    <div class="xenmark-loader-grid"></div>
+    <div class="xenmark-loader-corners">
+        <span></span><span></span><span></span><span></span>
+    </div>
+    <div class="xenmark-loader-center">
+        <div class="xenmark-loader-code">XN / SYSTEM BOOT / 2026</div>
+        <div class="xenmark-loader-logo" data-text="XENMARK">XENMARK</div>
+        <div class="xenmark-loader-slogan">BUILD YOUR SIGNAL.</div>
+        <div class="xenmark-loader-progress">
+            <span></span>
+        </div>
+        <div class="xenmark-loader-status">
+            <span>LOADING VISUAL SYSTEM</span>
+            <b id="xenmarkLoaderPercent">00%</b>
+        </div>
+    </div>
+    <div class="xenmark-loader-scan"></div>
+</div>
+
+
+
+<!-- =====================================================
+     GLOBAL
+===================================================== -->
+
+<div
+class="scroll-progress"
+id="scrollProgress">
+</div>
+
+
+<div
+class="cursor-glow"
+id="cursorGlow">
+</div>
+
+
+<div class="cyber-grid"></div>
+
+<div class="scanlines"></div>
+
+<div class="noise"></div>
+
+<div class="vignette"></div>
+
+
+<!-- =====================================================
+     LOADER
+===================================================== -->
+
+<div
+class="loader"
+id="loader">
+
+
+    <div class="loader-orbit one"></div>
+
+    <div class="loader-orbit two"></div>
+
+    <div class="loader-orbit three"></div>
+
+
+    <div class="loader-title">
+        XENMARK
+    </div>
+
+
+    <div class="loader-sub">
+        CUSTOM APPAREL
+    </div>
+
+
+    <div class="loader-bar">
+        <span></span>
+    </div>
+
+
+</div>
+
+
+<!-- =====================================================
+     XENMARK HEADER / MODIFIED
+===================================================== -->
+
+<header id="header" class="aman-header">
+
+    <div class="aman-header-brand">
+        <a href="#home" class="aman-logo">
+            XENMARK
+            <span></span>
+        </a>
+    </div>
+
+    <nav id="nav" class="aman-nav">
+        <a href="#collection">COLLECTION</a>
+        <a href="#gallery">GALLERY</a>
+        <a href="#customizer" data-nav-treatment="DTF">DTF</a>
+        <a href="#customizer" data-nav-treatment="EMBROIDERY">EMBROIDERY</a>
+        <a href="#limited">LIMITED</a>
+    </nav>
+
+    <div class="aman-header-right">
+        <button class="header-contact" onclick="openContact()">
+            CONTACT
+            <i>↗</i>
+        </button>
+
+        <div class="menu" id="menu">☰</div>
+    </div>
+
+</header>
+
+
+<!-- =====================================================
+     HERO / MODIFIED
+===================================================== -->
+
+<section class="hero aman-hero" id="home">
+
+    <video data-json-poster="media_49"
+        class="hero-video"
+        autoplay
+        muted
+        loop
+        playsinline
+        preload="metadata"
+    >
+
+        <source
+            data-json-src="media_47"
+            type="video/mp4"
+        >
+
+    </video>
+
+
+    <div class="aman-hero-overlay"></div>
+    <div class="aman-hero-grid"></div>
+
+
+    <div class="hero-content aman-hero-content">
+
+        <div class="hero-code">
+            XENMARK / CUSTOM APPAREL / 001
+        </div>
+
+
+        <h1 class="aman-hero-title">
+
+            <span>DON'T JUST</span>
+            <span class="stroke">WEAR IT.</span>
+            <strong>DEFINE IT.</strong>
+
+        </h1>
+
+
+        <div
+            class="hero-slogan"
+            id="heroSlogan"
+        >
+            <div class="hero-slogan-inner">
+                MAKE YOUR SIGNAL
+            </div>
+        </div>
+
+
+        <p class="hero-description">
+            Custom embroidery, DTF printing,
+            sports jerseys and apparel built
+            around your design and identity.
+        </p>
+
+
+        <div class="hero-actions">
+
+            <a
+                href="#services"
+                class="cyber-btn"
+            >
+                EXPLORE SERVICES
+                <span class="aman-btn-arrow">↗</span>
+            </a>
+
+            <a
+                href="#quote"
+                class="cyber-btn dark"
+            >
+                START YOUR DESIGN
+                <span class="aman-btn-arrow">↗</span>
+            </a>
+
+        </div>
+
+
+        <div class="hero-meta">
+
+            <div class="hero-meta-item">
+                <strong>DTF</strong>
+                <span>HIGH IMPACT</span>
+            </div>
+
+            <div class="hero-meta-item">
+                <strong>EMBROIDERY</strong>
+                <span>DETAIL CRAFT</span>
+            </div>
+
+            <div class="hero-meta-item">
+                <strong>TEAMWEAR</strong>
+                <span>CUSTOM JERSEYS</span>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="aman-hero-right">
+
+        <div class="aman-hero-orbit orbit-a"></div>
+        <div class="aman-hero-orbit orbit-b"></div>
+
+
+        <div class="aman-hero-image">
+
+            <img
+                data-json-src="media_1"
+                alt="Xenmark custom apparel"
+            >
+
+            <div class="aman-hero-image-frame"></div>
+
+            <div class="aman-image-tag">
+                XN / DROP 01
+            </div>
+
+            <div class="aman-image-side">
+                CREATE<br>
+                PRINT<br>
+                WEAR
+            </div>
+
+        </div>
+
+
+        <div class="hero-hud">
+
+            <div class="hud-top">
+                <span>XN / 001</span>
+                <span>READY</span>
+            </div>
+
+            <div class="hud-title">
+                DESIGN SIGNAL
+            </div>
+
+            <div class="hud-text">
+                Your idea becomes a piece
+                built around your identity.
+            </div>
+
+            <div class="hud-bars">
+                <i></i><i></i><i></i><i></i>
+                <i></i><i></i><i></i><i></i>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="hero-corner one">
+        XN / 001 / CREATE
+    </div>
+
+    <div class="hero-corner two">
+        DESIGN WITHOUT LIMITS
+    </div>
+
+
+    <div class="aman-hero-bottom">
+
+        <span>01 / 08</span>
+
+        <span>
+            CUSTOM APPAREL
+        </span>
+
+        <span>
+            SCROLL TO ENTER ↓
+        </span>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     TICKER
+===================================================== -->
+
+<div class="ticker">
+
+
+    <div class="ticker-track">
+
+
+        <div class="ticker-item">
+            CUSTOM APPAREL ✦
+        </div>
+
+        <div class="ticker-item">
+            DTF PRINTING ✦
+        </div>
+
+        <div class="ticker-item">
+            EMBROIDERY ✦
+        </div>
+
+        <div class="ticker-item">
+            SPORTS JERSEYS ✦
+        </div>
+
+        <div class="ticker-item">
+            BULK ORDERS ✦
+        </div>
+
+        <div class="ticker-item">
+            DESIGN YOUR WAY ✦
+        </div>
+
+
+        <div class="ticker-item">
+            CUSTOM APPAREL ✦
+        </div>
+
+        <div class="ticker-item">
+            DTF PRINTING ✦
+        </div>
+
+        <div class="ticker-item">
+            EMBROIDERY ✦
+        </div>
+
+        <div class="ticker-item">
+            SPORTS JERSEYS ✦
+        </div>
+
+
+    </div>
+
+
+</div>
+
+
+<!-- =====================================================
+     PROCESS
+===================================================== -->
+
+<section
+id="process">
+
+
+    <div class="section-head">
+
+
+        <div class="section-left reveal">
+
+
+            <div class="section-kicker">
+                XN PROCESS
+            </div>
+
+
+            <h2 class="section-title">
+
+                FROM IDEA
+                <span>TO WEAR.</span>
+
+            </h2>
+
+
+            <p class="section-description">
+
+                A clear path from your concept
+                to your finished apparel.
+
+            </p>
+
+
+        </div>
+
+
+        <div class="slogan-box reveal">
+
+
+            <div class="slogan-label">
+                LIVE SLOGAN
+            </div>
+
+
+            <div
+            class="dynamic-slogan"
+            data-slogans="
+                START WITH AN IDEA|
+                BUILD SOMETHING YOURS|
+                MAKE THE DESIGN SPEAK|
+                TURN THE CONCEPT INTO APPAREL">
+
+                START WITH AN IDEA
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+    <div class="process-grid">
+
+
+        <div class="process-card reveal">
+
+            <div class="process-number">
+                01 / IDEA
+            </div>
+
+            <h3>
+                SEND YOUR DESIGN
+            </h3>
+
+            <p>
+                Share your artwork,
+                logo or reference.
+            </p>
+
+        </div>
+
+
+        <div class="process-card reveal delay1">
+
+            <div class="process-number">
+                02 / BUILD
+            </div>
+
+            <h3>
+                WE PREPARE IT
+            </h3>
+
+            <p>
+                Your design gets prepared
+                for production.
+            </p>
+
+        </div>
+
+
+        <div class="process-card reveal delay2">
+
+            <div class="process-number">
+                03 / CHECK
+            </div>
+
+            <h3>
+                QUALITY CHECK
+            </h3>
+
+            <p>
+                Every order is checked
+                before moving forward.
+            </p>
+
+        </div>
+
+
+        <div class="process-card reveal delay3">
+
+            <div class="process-number">
+                04 / WEAR
+            </div>
+
+            <h3>
+                MAKE IT YOURS
+            </h3>
+
+            <p>
+                Your finished apparel
+                is ready to go.
+            </p>
+
+        </div>
+
+
+    </div>
+
+
+</section>
+
+
+<!-- =====================================================
+     SERVICES
+===================================================== -->
+
+<section
+id="services">
+
+
+    <div class="section-head">
+
+
+        <div class="section-left reveal">
+
+
+            <div class="section-kicker">
+                XN DESIGN SYSTEM
+            </div>
+
+
+            <h2 class="section-title">
+
+                CHOOSE YOUR
+                <span>FORMAT.</span>
+
+            </h2>
+
+
+            <p class="section-description">
+
+                Pick your apparel and
+                turn it into something yours.
+
+            </p>
+
+
+        </div>
+
+
+        <div class="slogan-box reveal">
+
+
+            <div class="slogan-label">
+                LIVE SLOGAN
+            </div>
+
+
+            <div
+            class="dynamic-slogan"
+            data-slogans="
+                CREATE YOUR OWN SIGNAL|
+                PRINT WHAT YOU IMAGINE|
+                CUSTOM HAS NO LIMIT|
+                MAKE IT LOOK DIFFERENT">
+
+                CREATE YOUR OWN SIGNAL
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+    <div class="cyber-card-grid">
+
+
+        <!-- =================================================
+             CARD 1
+        ================================================= -->
+
+        <div class="cyber-card reveal">
+
+
+            <div class="card-frame">
+
+
+                <img
+                class="auto-image"
+
+                data-json-src="media_2" data-json-set="media_2"
+
+                alt="T Shirt">
+
+            </div>
+
+
+            <div class="card-left-bar"></div>
+
+            <div class="card-right-bar"></div>
+
+
+            <div class="card-number">
+                01
+            </div>
+
+
+            <div class="card-barcode">
+
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+
+            </div>
+
+
+            <div class="card-tech">
+                CUSTOM / XN / WEAR
+            </div>
+
+
+            <div class="card-red-block"></div>
+
+
+            <div class="card-content">
+
+
+                <small>
+                    BASE / 01
+                </small>
+
+
+                <h3>
+                    CUSTOM<br>
+                    T-SHIRTS
+                </h3>
+
+
+                <p>
+                    Everyday custom pieces
+                    built around your design.
+                </p>
+
+
+                <a
+                href="#quote"
+                class="card-link">
+
+                    CREATE
+
+                    <span>
+                        →
+                    </span>
+
+                </a>
+
+
+            </div>
+
+
+        </div>
+
+
+        <!-- =================================================
+             CARD 2
+        ================================================= -->
+
+        <div class="cyber-card reveal delay1">
+
+
+            <div class="card-frame">
+
+
+                <img
+                class="auto-image"
+
+                data-json-src="media_3" data-json-set="media_3"
+
+                alt="Hoodie">
+
+            </div>
+
+
+            <div class="card-left-bar"></div>
+
+            <div class="card-right-bar"></div>
+
+
+            <div class="card-number">
+                02
+            </div>
+
+
+            <div class="card-barcode">
+
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+
+            </div>
+
+
+            <div class="card-tech">
+                HOODIE / XN / LAB
+            </div>
+
+
+            <div class="card-red-block"></div>
+
+
+            <div class="card-content">
+
+
+                <small>
+                    BASE / 02
+                </small>
+
+
+                <h3>
+                    CUSTOM<br>
+                    HOODIES
+                </h3>
+
+
+                <p>
+                    Bold pieces for brands,
+                    creators and communities.
+                </p>
+
+
+                <a
+                href="#quote"
+                class="card-link">
+
+                    BUILD
+
+                    <span>
+                        →
+                    </span>
+
+                </a>
+
+
+            </div>
+
+
+        </div>
+
+
+        <!-- =================================================
+             CARD 3
+        ================================================= -->
+
+        <div class="cyber-card reveal delay2">
+
+
+            <div class="card-frame">
+
+
+                <img
+                class="auto-image"
+
+                data-json-src="media_4" data-json-set="media_4"
+
+                alt="Sports Jersey">
+
+            </div>
+
+
+            <div class="card-left-bar"></div>
+
+            <div class="card-right-bar"></div>
+
+
+            <div class="card-number">
+                03
+            </div>
+
+
+            <div class="card-barcode">
+
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+
+            </div>
+
+
+            <div class="card-tech">
+                TEAM / SPORT / XN
+            </div>
+
+
+            <div class="card-red-block"></div>
+
+
+            <div class="card-content">
+
+
+                <small>
+                    BASE / 03
+                </small>
+
+
+                <h3>
+                    SPORTS<br>
+                    JERSEYS
+                </h3>
+
+
+                <p>
+                    Custom teamwear for
+                    cricket, football and more.
+                </p>
+
+
+                <a
+                href="#quote"
+                class="card-link">
+
+                    CUSTOMIZE
+
+                    <span>
+                        →
+                    </span>
+
+                </a>
+
+
+            </div>
+
+
+        </div>
+
+
+        <div class="cyber-card reveal delay2">
+            <div class="card-frame">
+                <img class="auto-image"
+                data-json-src="media_5" data-json-set="media_5"
+                alt="Sports jersey">
+            </div>
+            <div class="card-left-bar"></div>
+            <div class="card-right-bar"></div>
+            <div class="card-number">04</div>
+            <div class="card-barcode"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+            <div class="card-tech">SPORT / XN / TEAM</div>
+            <div class="card-red-block"></div>
+            <div class="card-content">
+                <small>BASE / 04</small>
+                <h3>TEAM<br>JERSEYS</h3>
+                <p>Custom sports pieces for teams, events and groups.</p>
+                <a href="#quote" class="card-link">CREATE <span>→</span></a>
+            </div>
+        </div>
+
+        <div class="cyber-card reveal delay3">
+            <div class="card-frame">
+                <img class="auto-image"
+                data-json-src="media_6" data-json-set="media_6"
+                alt="Custom cap">
+            </div>
+            <div class="card-left-bar"></div>
+            <div class="card-right-bar"></div>
+            <div class="card-number">05</div>
+            <div class="card-barcode"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+            <div class="card-tech">ACCESSORY / XN / CAP</div>
+            <div class="card-red-block"></div>
+            <div class="card-content">
+                <small>BASE / 05</small>
+                <h3>CUSTOM<br>CAPS</h3>
+                <p>Clean headwear with custom embroidery and identity.</p>
+                <a href="#quote" class="card-link">CREATE <span>→</span></a>
+            </div>
+        </div>
+
+
+    </div>
+
+
+</section>
+
+
+<!-- =====================================================
+     VISUAL IMAGE SECTION
+===================================================== -->
+
+<section>
+
+
+    <div class="section-head">
+
+
+        <div class="section-left reveal">
+
+
+            <div class="section-kicker">
+                XN DESIGN LAB
+            </div>
+
+
+            <h2 class="section-title">
+
+                MAKE YOUR
+                <span>SIGNAL.</span>
+
+            </h2>
+
+
+        </div>
+
+
+        <div class="slogan-box reveal">
+
+
+            <div class="slogan-label">
+                LIVE SLOGAN
+            </div>
+
+
+            <div
+            class="dynamic-slogan"
+            data-slogans="
+                YOUR IDEA HAS A SIGNAL|
+                BUILD THE LOOK YOU WANT|
+                YOUR STYLE YOUR RULES|
+                DESIGN WITHOUT ORDINARY">
+
+                YOUR IDEA HAS A SIGNAL
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+    <div class="visual-section">
+
+
+        <div class="visual-image reveal">
+
+
+            <img
+            class="auto-image"
+
+            data-json-src="media_7" data-json-set="media_7"
+
+            alt="Fashion">
+
+            <div class="visual-frame"></div>
+
+            <div class="visual-label">
+                LIVE DESIGN FEED
+            </div>
+
+            <div class="visual-scan"></div>
+
+
+        </div>
+
+
+        <div class="visual-content reveal">
+
+
+            <h2>
+
+                MAKE IT
+                <span>LOOK DIFFERENT.</span>
+
+            </h2>
+
+
+            <p>
+
+                Your artwork, logo,
+                brand identity or team design
+                becomes the visual center
+                of the piece.
+
+            </p>
+
+
+            <div class="visual-list">
+
+
+                <div class="visual-row">
+
+                    CUSTOM ARTWORK
+
+                    <span>
+                        01
+                    </span>
+
+                </div>
+
+
+                <div class="visual-row">
+
+                    BRAND APPAREL
+
+                    <span>
+                        02
+                    </span>
+
+                </div>
+
+
+                <div class="visual-row">
+
+                    COLLEGE / COMPANY
+
+                    <span>
+                        03
+                    </span>
+
+                </div>
+
+
+                <div class="visual-row">
+
+                    SPORTS / EVENTS
+
+                    <span>
+                        04
+                    </span>
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+</section>
+
+
+<!-- =====================================================
+     COLLECTION
+===================================================== -->
+
+<section
+id="collection">
+
+
+    <div class="section-head">
+
+
+        <div class="section-left reveal">
+
+
+            <div class="section-kicker">
+                XN VISUAL COLLECTION
+            </div>
+
+
+            <h2 class="section-title">
+
+                DESIGNED TO
+                <span>BREAK OUT.</span>
+
+            </h2>
+
+
+        </div>
+
+
+        <div class="slogan-box reveal">
+
+
+            <div class="slogan-label">
+                LIVE SLOGAN
+            </div>
+
+
+            <div
+            class="dynamic-slogan"
+            data-slogans="
+                WEAR THE UNEXPECTED|
+                YOUR VISION YOUR WAY|
+                MAKE THE PIECE YOURS|
+                DON'T LOOK ORDINARY">
+
+                WEAR THE UNEXPECTED
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+    <div class="banner">
+
+
+        <div class="banner-slide active">
+
+
+            <img
+            data-json-src="media_8"
+            alt="Collection">
+
+
+            <div class="banner-info">
+
+
+                <div class="banner-code">
+                    XN / 001
+                </div>
+
+                <div class="banner-slogan">
+                    WEAR THE IDEA
+                </div>
+
+                <h2>
+
+                    WEAR<br>
+
+                    <span>
+                        YOUR
+                    </span>
+
+                    <br>
+
+                    VISION.
+
+                </h2>
+
+
+                <p>
+
+                    Premium custom apparel made around
+                    your artwork, logo or personal
+                    style — from concept to finished piece.
+
+                </p>
+
+
+                <a
+                href="#quote"
+                class="cyber-btn">
+
+                    START DESIGN
+
+                </a>
+
+
+            </div>
+
+
+        </div>
+
+
+        <div class="banner-slide">
+
+
+            <img
+            data-json-src="media_9"
+            alt="Streetwear">
+
+
+            <div class="banner-info">
+
+
+                <div class="banner-code">
+                    XN / 002
+                </div>
+
+                <div class="banner-slogan">
+                    BUILT AROUND YOU
+                </div>
+
+                <h2>
+
+                    BUILT<br>
+
+                    <span>
+                        FOR
+                    </span>
+
+                    <br>
+
+                    YOU.
+
+                </h2>
+
+
+                <p>
+
+                    Choose a tee, hoodie or team piece,
+                    then add your own graphics,
+                    branding and visual identity.
+
+                </p>
+
+
+                <a
+                href="#services"
+                class="cyber-btn">
+
+                    EXPLORE
+
+                </a>
+
+
+            </div>
+
+
+        </div>
+
+
+        <div class="banner-slide">
+
+
+            <img
+            data-json-src="media_10"
+            alt="Apparel">
+
+
+            <div class="banner-info">
+
+
+                <div class="banner-code">
+                    XN / 003
+                </div>
+
+                <div class="banner-slogan">
+                    CREATE YOUR SIGNAL
+                </div>
+
+                <h2>
+
+                    CREATE<br>
+
+                    <span>
+                        YOUR
+                    </span>
+
+                    <br>
+
+                    SIGNAL.
+
+                </h2>
+
+
+                <p>
+
+                    Your design becomes the focus:
+                    sharp printing, custom detail
+                    and a piece made for you.
+
+                </p>
+
+
+                <a
+                href="#gallery"
+                class="cyber-btn">
+
+                    VIEW GALLERY
+
+                </a>
+
+
+            </div>
+
+
+        </div>
+
+
+        <div class="banner-controls">
+
+
+            <button
+            class="banner-dot active"
+            onclick="changeBanner(0)">
+            </button>
+
+
+            <button
+            class="banner-dot"
+            onclick="changeBanner(1)">
+            </button>
+
+
+            <button
+            class="banner-dot"
+            onclick="changeBanner(2)">
+            </button>
+
+
+        </div>
+
+
+    </div>
+
+
+</section>
+
+
+<!-- =====================================================
+     PRODUCT SECTION
+===================================================== -->
+
+<section>
+
+
+    <div class="section-head">
+
+
+        <div class="section-left reveal">
+
+
+            <div class="section-kicker">
+                FEATURED BASES
+            </div>
+
+
+            <h2 class="section-title">
+
+                PICK YOUR
+                <span>BASE.</span>
+
+            </h2>
+
+
+        </div>
+
+
+        <div class="slogan-box reveal">
+
+
+            <div class="slogan-label">
+                LIVE SLOGAN
+            </div>
+
+
+            <div
+            class="dynamic-slogan"
+            data-slogans="
+                START WITH THE BASE|
+                BUILD YOUR OWN LOOK|
+                CREATE YOUR OWN PIECE|
+                PICK IT THEN CUSTOMIZE IT">
+
+                START WITH THE BASE
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+    <div class="product-grid">
+
+
+        <div class="product reveal">
+
+
+            <div class="product-image">
+
+
+                <div class="product-tag">
+                    DTF
+                </div>
+
+
+                <div class="product-no">
+                    01
+                </div>
+
+
+                <img
+                class="auto-image"
+
+                data-json-src="media_11" data-json-set="media_11"
+
+                alt="T Shirt">
+
+            </div>
+
+
+            <div class="product-body">
+
+
+                <small>
+                    EVERYDAY
+                </small>
+
+
+                <h3>
+                    CUSTOM T-SHIRT
+                </h3>
+
+
+                <p>
+                    Custom graphics for
+                    everyday apparel.
+                </p>
+
+
+                <div class="product-bottom">
+
+
+                    <div class="product-price">
+                        CUSTOM
+                    </div>
+
+
+                    <a
+                    href="#quote"
+                    class="mini-btn">
+
+                        ENQUIRE
+
+                    </a>
+
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+
+        <div class="product reveal delay1">
+
+
+            <div class="product-image">
+
+
+                <div class="product-tag">
+                    EMBROIDERY
+                </div>
+
+
+                <div class="product-no">
+                    02
+                </div>
+
+
+                <img
+                class="auto-image"
+
+                data-json-src="media_12" data-json-set="media_12"
+
+                alt="Hoodie">
+
+            </div>
+
+
+            <div class="product-body">
+
+
+                <small>
+                    PREMIUM
+                </small>
+
+
+                <h3>
+                    CUSTOM HOODIE
+                </h3>
+
+
+                <p>
+                    Logos, graphics and
+                    custom branding.
+                </p>
+
+
+                <div class="product-bottom">
+
+
+                    <div class="product-price">
+                        CUSTOM
+                    </div>
+
+
+                    <a
+                    href="#quote"
+                    class="mini-btn">
+
+                        ENQUIRE
+
+                    </a>
+
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+
+        <div class="product reveal delay2">
+
+
+            <div class="product-image">
+
+
+                <div class="product-tag">
+                    TEAM
+                </div>
+
+
+                <div class="product-no">
+                    03
+                </div>
+
+
+                <img
+                class="auto-image"
+
+                data-json-src="media_13" data-json-set="media_13"
+
+                alt="Jersey">
+
+            </div>
+
+
+            <div class="product-body">
+
+
+                <small>
+                    SPORTS
+                </small>
+
+
+                <h3>
+                    CUSTOM JERSEY
+                </h3>
+
+
+                <p>
+                    Team colors, names and
+                    custom graphics.
+                </p>
+
+
+                <div class="product-bottom">
+
+
+                    <div class="product-price">
+                        CUSTOM
+                    </div>
+
+
+                    <a
+                    href="#quote"
+                    class="mini-btn">
+
+                        ENQUIRE
+
+                    </a>
+
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+
+        <div class="product reveal delay3">
+
+
+            <div class="product-image">
+
+
+                <div class="product-tag">
+                    BRAND
+                </div>
+
+
+                <div class="product-no">
+                    04
+                </div>
+
+
+                <img
+                class="auto-image"
+
+                data-json-src="media_14" data-json-set="media_14"
+
+                alt="Cap">
+
+            </div>
+
+
+            <div class="product-body">
+
+
+                <small>
+                    ACCESSORY
+                </small>
+
+
+                <h3>
+                    CUSTOM CAP
+                </h3>
+
+
+                <p>
+                    Logo placement and
+                    custom embroidery.
+                </p>
+
+
+                <div class="product-bottom">
+
+
+                    <div class="product-price">
+                        CUSTOM
+                    </div>
+
+
+                    <a
+                    href="#quote"
+                    class="mini-btn">
+
+                        ENQUIRE
+
+                    </a>
+
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+</section>
+
+
+<!-- =====================================================
+     SECOND CYBER CARD SECTION
+===================================================== -->
+
+<section>
+
+
+    <div class="section-head">
+
+
+        <div class="section-left reveal">
+
+
+            <div class="section-kicker">
+                XN VISUAL ARCHIVE
+            </div>
+
+
+            <h2 class="section-title">
+
+                SEE THE
+                <span>DIFFERENCE.</span>
+
+            </h2>
+
+
+        </div>
+
+
+        <div class="slogan-box reveal">
+
+
+            <div class="slogan-label">
+                LIVE SLOGAN
+            </div>
+
+
+            <div
+            class="dynamic-slogan"
+            data-slogans="
+                YOUR LOOK STARTS HERE|
+                VISUALIZE THE NEXT PIECE|
+                STYLE HAS A SIGNAL|
+                MAKE THE IMAGE YOURS">
+
+                YOUR LOOK STARTS HERE
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+    <div class="cyber-card-grid see-difference-grid">
+
+
+        <div class="cyber-card reveal">
+
+
+            <div class="card-frame">
+
+
+                <img
+                class="auto-image"
+
+                data-json-src="media_15" data-json-set="media_15"
+
+                alt="Style">
+
+            </div>
+
+
+            <div class="card-left-bar"></div>
+
+            <div class="card-number">
+                04
+            </div>
+
+
+            <div class="card-barcode">
+
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+
+            </div>
+
+
+            <div class="card-tech">
+                STYLE / XN / ARCHIVE
+            </div>
+
+
+            <div class="card-red-block"></div>
+
+
+            <div class="card-content">
+
+
+                <small>
+                    VISUAL / 04
+                </small>
+
+
+                <h3>
+                    STREET<br>
+                    SIGNAL
+                </h3>
+
+
+                <p>
+                    Strong visuals built
+                    for custom wear.
+                </p>
+
+
+            </div>
+
+
+        </div>
+
+
+        <div class="cyber-card reveal delay1">
+
+
+            <div class="card-frame">
+
+
+                <img
+                class="auto-image"
+
+                data-json-src="media_16" data-json-set="media_16"
+
+                alt="Motion">
+
+            </div>
+
+
+            <div class="card-right-bar"></div>
+
+            <div class="card-number">
+                05
+            </div>
+
+
+            <div class="card-barcode">
+
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+
+            </div>
+
+
+            <div class="card-tech">
+                VISUAL / XN / MOVE
+            </div>
+
+
+            <div class="card-red-block"></div>
+
+
+            <div class="card-content">
+
+
+                <small>
+                    VISUAL / 05
+                </small>
+
+
+                <h3>
+                    BOLD<br>
+                    MOTION
+                </h3>
+
+
+                <p>
+                    Apparel that moves
+                    with your identity.
+                </p>
+
+
+            </div>
+
+
+        </div>
+
+
+        <div class="cyber-card reveal delay2">
+
+
+            <div class="card-frame">
+
+
+                <img
+                class="auto-image"
+
+                data-json-src="media_17" data-json-set="media_17"
+
+                alt="Heavy Layer">
+
+            </div>
+
+
+            <div class="card-left-bar"></div>
+
+            <div class="card-right-bar"></div>
+
+            <div class="card-number">
+                06
+            </div>
+
+
+            <div class="card-barcode">
+
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+
+            </div>
+
+
+            <div class="card-tech">
+                HOODIE / XN / CUT
+            </div>
+
+
+            <div class="card-red-block"></div>
+
+
+            <div class="card-content">
+
+
+                <small>
+                    VISUAL / 06
+                </small>
+
+
+                <h3>
+                    HEAVY<br>
+                    LAYER
+                </h3>
+
+
+                <p>
+                    Custom hoodie visuals
+                    with serious impact.
+                </p>
+
+
+            </div>
+
+
+        </div>
+
+
+        <div class="cyber-card reveal delay2">
+            <div class="card-frame">
+                <img class="auto-image"
+                data-json-src="media_18" data-json-set="media_18"
+                alt="Team jersey">
+            </div>
+            <div class="card-left-bar"></div><div class="card-right-bar"></div>
+            <div class="card-number">04</div>
+            <div class="card-barcode"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+            <div class="card-tech">SPORT / XN / 04</div><div class="card-red-block"></div>
+            <div class="card-content">
+                <small>VISUAL / 04</small>
+                <h3>TEAM<br>FORCE</h3>
+                <p>Sharp teamwear built around your logo and identity.</p>
+                <a href="#quote" class="card-link">EXPLORE <span>→</span></a>
+            </div>
+        </div>
+
+        <div class="cyber-card reveal delay3">
+            <div class="card-frame">
+                <img class="auto-image"
+                data-json-src="media_19" data-json-set="media_19"
+                alt="Custom cap">
+            </div>
+            <div class="card-left-bar"></div><div class="card-right-bar"></div>
+            <div class="card-number">05</div>
+            <div class="card-barcode"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+            <div class="card-tech">ACCESSORY / XN / 05</div><div class="card-red-block"></div>
+            <div class="card-content">
+                <small>VISUAL / 05</small>
+                <h3>BLACK<br>FRAME</h3>
+                <p>Minimal accessories that complete the visual system.</p>
+                <a href="#quote" class="card-link">EXPLORE <span>→</span></a>
+            </div>
+        </div>
+
+
+    </div>
+
+
+</section>
+
+
+
+<!-- =====================================================
+     WEAPON SELECTION / SCROLL PRODUCT SYSTEM
+===================================================== -->
+
+<section class="aman-arsenal" id="arsenal">
+
+    <div class="aman-arsenal-word">
+        ARSENAL
+    </div>
+
+
+    <div class="aman-arsenal-head reveal">
+
+        <div>
+
+            <small>
+                PRODUCT SYSTEM / 07
+            </small>
+
+            <h2>
+                SELECT YOUR
+                <span>DROP.</span>
+            </h2>
+
+        </div>
+
+        <div class="aman-arsenal-live">
+            <span></span>
+            SYSTEM ACTIVE
+        </div>
+
+    </div>
+
+
+    <div class="aman-arsenal-layout">
+
+
+        <div class="aman-arsenal-selector">
+
+            <button
+                class="arsenal-choice active"
+                data-arsenal="0"
+            >
+                <b>01</b>
+                <strong>OVERSIZED TEE</strong>
+                <small>CORE DROP</small>
+            </button>
+
+
+            <button
+                class="arsenal-choice"
+                data-arsenal="1"
+            >
+                <b>02</b>
+                <strong>CYBER HOODIE</strong>
+                <small>HEAVY WEIGHT</small>
+            </button>
+
+
+            <button
+                class="arsenal-choice"
+                data-arsenal="2"
+            >
+                <b>03</b>
+                <strong>STREET CAP</strong>
+                <small>ACCESSORY</small>
+            </button>
+
+
+            <button
+                class="arsenal-choice"
+                data-arsenal="3"
+            >
+                <b>04</b>
+                <strong>TEAM JERSEY</strong>
+                <small>CUSTOM SPORT</small>
+            </button>
+
+
+            <button
+                class="arsenal-choice"
+                data-arsenal="4"
+            >
+                <b>05</b>
+                <strong>PRINTED HOODIE</strong>
+                <small>LIMITED</small>
+            </button>
+
+        </div>
+
+
+        <div class="aman-arsenal-display">
+
+            <div class="arsenal-display-grid"></div>
+            <div class="arsenal-display-scan"></div>
+
+            <div class="arsenal-display-ring ring-1"></div>
+            <div class="arsenal-display-ring ring-2"></div>
+            <div class="arsenal-display-ring ring-3"></div>
+
+
+            <div class="arsenal-product">
+
+                <div
+                    class="arsenal-number"
+                    id="arsenalNumber"
+                >
+                    01
+                </div>
+
+                <div class="arsenal-product-tag">
+                    XN / LOADOUT
+                </div>
+
+
+                <img
+                    id="arsenalImage"
+                    data-json-src="media_20"
+                    alt="Xenmark product"
+                >
+
+
+                <i class="arsenal-corner tl"></i>
+                <i class="arsenal-corner tr"></i>
+                <i class="arsenal-corner bl"></i>
+                <i class="arsenal-corner br"></i>
+
+            </div>
+
+
+            <div class="arsenal-info">
+
+                <small id="arsenalMeta">
+                    CORE DROP / 001
+                </small>
+
+                <h3 id="arsenalTitle">
+                    OVERSIZED TEE
+                </h3>
+
+                <p id="arsenalText">
+                    Heavy visual presence with
+                    a clean custom finish.
+                </p>
+
+                <a
+                    href="#quote"
+                    class="cyber-btn"
+                >
+                    SELECT DROP
+                    <span>↗</span>
+                </a>
+
+            </div>
+
+
+            <div class="arsenal-readout r1">
+                POWER <b>98</b>
+            </div>
+
+            <div class="arsenal-readout r2">
+                DETAIL <b>100</b>
+            </div>
+
+            <div class="arsenal-readout r3">
+                STYLE <b>99</b>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+<!-- =====================================================
+     WHY XENMARK PREMIUM STRIP
+===================================================== -->
+<section class="why-xenmark-strip scroll-reveal" id="why-xenmark">
+    <div class="why-xenmark-bg-grid"></div>
+    <div class="why-xenmark-beam"></div>
+
+    <div class="why-xenmark-head">
+        <div class="why-xenmark-kicker">XN / THE XENMARK STANDARD</div>
+        <h2>WHY <span>XENMARK?</span></h2>
+        <p>Custom apparel built around your idea, your visual identity and your way of wearing it.</p>
+    </div>
+
+    <div class="why-xenmark-items">
+        <article class="why-xenmark-item">
+            <span class="why-index">01</span>
+            <span class="why-icon">✦</span>
+            <h3>CUSTOM MADE</h3>
+            <p>Your artwork, logo or concept becomes the centre of the piece.</p>
+        </article>
+
+        <article class="why-xenmark-item">
+            <span class="why-index">02</span>
+            <span class="why-icon">◈</span>
+            <h3>DTF PRINT</h3>
+            <p>Sharp graphics and bold visual detail for custom apparel.</p>
+        </article>
+
+        <article class="why-xenmark-item">
+            <span class="why-index">03</span>
+            <span class="why-icon">▣</span>
+            <h3>EMBROIDERY</h3>
+            <p>Stitched branding for a textured custom finish.</p>
+        </article>
+
+        <article class="why-xenmark-item">
+            <span class="why-index">04</span>
+            <span class="why-icon">⌁</span>
+            <h3>BUILT FOR YOU</h3>
+            <p>Tees, hoodies, teamwear, caps and more shaped around your style.</p>
+        </article>
+
+        <article class="why-xenmark-item">
+            <span class="why-index">05</span>
+            <span class="why-icon">X</span>
+            <h3>XENMARK LOOK</h3>
+            <p>One visual language carried from the idea to the finished piece.</p>
+        </article>
+    </div>
+</section>
+
+<!-- =====================================================
+     CRAZY DROP
+===================================================== -->
+
+<section
+class="crazy-section"
+id="crazy">
+
+
+    <div class="crazy-noise"></div>
+
+    <div class="crazy-top-line"></div>
+
+
+    <div class="section-head">
+
+
+        <div class="section-left reveal">
+
+
+            <div class="section-kicker">
+                XN / UNSTABLE MODE
+            </div>
+
+
+            <h2 class="section-title">
+
+                ENTER THE
+                <span>CRAZY.</span>
+
+            </h2>
+
+
+            <p class="section-description">
+
+                This isn't a normal product
+                section. This is the XN visual drop.
+
+            </p>
+
+
+        </div>
+
+
+        <div class="slogan-box reveal">
+
+
+            <div class="slogan-label">
+                LIVE SIGNAL
+            </div>
+
+
+            <div
+            class="dynamic-slogan"
+            data-slogans="
+                BREAK THE FRAME|
+                THIS ONE HITS DIFFERENT|
+                TURN THE SIGNAL UP|
+                NO ORDINARY DESIGN|
+                ENTER THE XN ZONE">
+
+                BREAK THE FRAME
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+    <div
+    class="crazy-stage"
+    id="crazyStage">
+
+
+        <div class="crazy-orbit orbit-one"></div>
+
+        <div class="crazy-orbit orbit-two"></div>
+
+        <div class="crazy-orbit orbit-three"></div>
+
+
+        <span class="crazy-particle p1"></span>
+        <span class="crazy-particle p2"></span>
+        <span class="crazy-particle p3"></span>
+        <span class="crazy-particle p4"></span>
+        <span class="crazy-particle p5"></span>
+        <span class="crazy-particle p6"></span>
+        <span class="crazy-particle p7"></span>
+        <span class="crazy-particle p8"></span>
+
+
+        <div class="crazy-center">
+
+
+            <div class="crazy-center-code">
+                XN / DROP / 009
+            </div>
+
+
+            <h3>
+
+                CRAZY
+                <span>DROP.</span>
+
+            </h3>
+
+
+            <p>
+                WEAR THE SIGNAL
+            </p>
+
+
+            <div
+            class="crazy-live-word"
+            data-words="
+                BREAK THE FRAME|
+                FLIP THE STANDARD|
+                MAKE IT LOUD|
+                PRINT THE ENERGY|
+                OWN THE LOOK">
+                BREAK THE FRAME
+            </div>
+
+
+            <div class="crazy-center-line"></div>
+
+
+        </div>
+
+
+        <!-- CARD 1 -->
+
+        <div class="crazy-card crazy-card-1">
+
+
+            <div class="crazy-card-top">
+
+                <span>
+                    01
+                </span>
+
+                <span>
+                    XN
+                </span>
+
+            </div>
+
+
+            <div class="crazy-image">
+
+
+                <img
+                class="auto-image"
+
+                data-json-src="media_21" data-json-set="media_21"
+
+                alt="Crazy fashion">
+
+            </div>
+
+
+            <div class="crazy-side">
+                SIGNAL / 01
+            </div>
+
+
+            <div class="crazy-card-bottom">
+
+                <small>
+                    DROP / A
+                </small>
+
+
+                <h4>
+                    RED SIGNAL
+                </h4>
+
+            </div>
+
+
+        </div>
+
+
+        <!-- CARD 2 -->
+
+        <div class="crazy-card crazy-card-2">
+
+
+            <div class="crazy-card-top">
+
+                <span>
+                    02
+                </span>
+
+                <span>
+                    XN
+                </span>
+
+            </div>
+
+
+            <div class="crazy-image">
+
+
+                <img
+                class="auto-image"
+
+                data-json-src="media_22" data-json-set="media_22"
+
+                alt="Crazy clothing">
+
+            </div>
+
+
+            <div class="crazy-side">
+                SIGNAL / 02
+            </div>
+
+
+            <div class="crazy-card-bottom">
+
+                <small>
+                    DROP / B
+                </small>
+
+
+                <h4>
+                    NIGHT CODE
+                </h4>
+
+            </div>
+
+
+        </div>
+
+
+        <!-- CARD 3 -->
+
+        <div class="crazy-card crazy-card-3">
+
+
+            <div class="crazy-card-top">
+
+                <span>
+                    03
+                </span>
+
+                <span>
+                    XN
+                </span>
+
+            </div>
+
+
+            <div class="crazy-image">
+
+
+                <img
+                class="auto-image"
+
+                data-json-src="media_23" data-json-set="media_23"
+
+                alt="Crazy hoodie">
+
+            </div>
+
+
+            <div class="crazy-side">
+                SIGNAL / 03
+            </div>
+
+
+            <div class="crazy-card-bottom">
+
+                <small>
+                    DROP / C
+                </small>
+
+
+                <h4>
+                    HEAVY SHIFT
+                </h4>
+
+            </div>
+
+
+        </div>
+
+
+        <!-- CARD 4 -->
+
+        <div class="crazy-card crazy-card-4">
+
+
+            <div class="crazy-card-top">
+
+                <span>
+                    04
+                </span>
+
+                <span>
+                    XN
+                </span>
+
+            </div>
+
+
+            <div class="crazy-image">
+
+
+                <img
+                class="auto-image"
+
+                data-json-src="media_24" data-json-set="media_24"
+
+                alt="Crazy sport">
+
+            </div>
+
+
+            <div class="crazy-side">
+                SIGNAL / 04
+            </div>
+
+
+            <div class="crazy-card-bottom">
+
+                <small>
+                    DROP / D
+                </small>
+
+
+                <h4>
+                    TEAM FORCE
+                </h4>
+
+            </div>
+
+
+        </div>
+
+
+        <!-- CARD 5 -->
+
+        <div class="crazy-card crazy-card-5">
+
+
+            <div class="crazy-card-top">
+
+                <span>
+                    05
+                </span>
+
+                <span>
+                    XN
+                </span>
+
+            </div>
+
+
+            <div class="crazy-image">
+
+
+                <img
+                class="auto-image"
+
+                data-json-src="media_25" data-json-set="media_25"
+
+                alt="Crazy cap">
+
+            </div>
+
+
+            <div class="crazy-side">
+                SIGNAL / 05
+            </div>
+
+
+            <div class="crazy-card-bottom">
+
+                <small>
+                    DROP / E
+                </small>
+
+
+                <h4>
+                    BLACK FRAME
+                </h4>
+
+            </div>
+
+
+        </div>
+
+
+        <!-- CARD 6 -->
+
+        <div class="crazy-card crazy-card-6">
+
+
+            <div class="crazy-card-top">
+
+                <span>
+                    06
+                </span>
+
+                <span>
+                    XN
+                </span>
+
+            </div>
+
+
+            <div class="crazy-image">
+
+
+                <img
+                class="auto-image"
+
+                data-json-src="media_26" data-json-set="media_26"
+
+                alt="Crazy style">
+
+            </div>
+
+
+            <div class="crazy-side">
+                SIGNAL / 06
+            </div>
+
+
+            <div class="crazy-card-bottom">
+
+                <small>
+                    DROP / F
+                </small>
+
+
+                <h4>
+                    VISUAL ATTACK
+                </h4>
+
+            </div>
+
+
+        </div>
+
+
+        <!-- CARD 7 -->
+
+        <div class="crazy-card crazy-card-7">
+
+
+            <div class="crazy-card-top">
+
+                <span>
+                    07
+                </span>
+
+                <span>
+                    XN
+                </span>
+
+            </div>
+
+
+            <div class="crazy-image">
+
+
+                <img
+                class="auto-image"
+
+                data-json-src="media_27" data-json-set="media_27"
+
+                alt="Crazy design">
+
+            </div>
+
+
+            <div class="crazy-side">
+                SIGNAL / 07
+            </div>
+
+
+            <div class="crazy-card-bottom">
+
+                <small>
+                    DROP / G
+                </small>
+
+
+                <h4>
+                    XN OVERRIDE
+                </h4>
+
+            </div>
+
+
+        </div>
+
+
+        <!-- CARD 8 -->
+
+        <div class="crazy-card crazy-card-8">
+
+
+            <div class="crazy-card-top">
+
+                <span>
+                    08
+                </span>
+
+                <span>
+                    XN
+                </span>
+
+            </div>
+
+
+            <div class="crazy-image">
+
+
+                <img
+                class="auto-image"
+
+                data-json-src="media_28" data-json-set="media_28"
+
+                alt="Crazy fashion">
+
+            </div>
+
+
+            <div class="crazy-side">
+                SIGNAL / 08
+            </div>
+
+
+            <div class="crazy-card-bottom">
+
+                <small>
+                    DROP / H
+                </small>
+
+
+                <h4>
+                    FINAL SIGNAL
+                </h4>
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+    <div class="crazy-bottom-code">
+
+        <span>
+            XN / VISUAL SYSTEM
+        </span>
+
+        <span>
+            DROP 009 / ACTIVE
+        </span>
+
+    </div>
+
+
+
+</section>
+
+
+<!-- =====================================================
+     CRAZY CYBERPUNK BANNER — AUTO CHANGE EVERY 3 SECONDS
+===================================================== -->
+
+<section class="crazy-banner-section" id="crazy-banner">
+
+    <div class="crazy-banner-title">
+        <small>XN / CRAZY VISUAL TRANSMISSION</small>
+        <h2>ENTER THE<br><span>CYBER DROP.</span></h2>
+    </div>
+
+    <div class="crazy-banner-wrap" aria-label="Xenmark animated product banner">
+
+        <div class="crazy-banner-slide active">
+            <img
+                data-json-src="media_29"
+                alt="Custom fashion apparel"
+                loading="eager">
+            <div class="crazy-banner-content">
+                <div class="code">DROP / 001</div>
+                <div class="crazy-banner-slogan">MAKE YOUR IDEA VISIBLE</div>
+                <h3>WEAR<br><span>THE SIGNAL.</span></h3>
+                <p>Turn your artwork, logo or concept into custom apparel with a clean print or embroidery finish made around your identity.</p>
+            </div>
+        </div>
+
+        <div class="crazy-banner-slide">
+            <img
+                data-json-src="media_30"
+                alt="Premium streetwear apparel"
+                loading="lazy">
+            <div class="crazy-banner-content">
+                <div class="code">DROP / 002</div>
+                <div class="crazy-banner-slogan">BUILD IT YOUR WAY</div>
+                <h3>CREATE<br><span>YOUR PIECE.</span></h3>
+                <p>Choose your base, add your graphics and build apparel for your brand, team, event, college group or personal style.</p>
+            </div>
+        </div>
+
+        <div class="crazy-banner-slide">
+            <img
+                data-json-src="media_31"
+                alt="Custom clothing collection"
+                loading="lazy">
+            <div class="crazy-banner-content">
+                <div class="code">DROP / 003</div>
+                <div class="crazy-banner-slogan">PRINT. STITCH. STAND OUT.</div>
+                <h3>MAKE<br><span>WHAT'S YOURS.</span></h3>
+                <p>From DTF printing to embroidery, Xenmark helps turn a visual idea into a finished apparel piece you can actually wear.</p>
+            </div>
+        </div>
+
+        <div class="crazy-banner-dots">
+            <button class="crazy-banner-dot active" type="button" data-crazy-banner="0" aria-label="Show banner 1"></button>
+            <button class="crazy-banner-dot" type="button" data-crazy-banner="1" aria-label="Show banner 2"></button>
+            <button class="crazy-banner-dot" type="button" data-crazy-banner="2" aria-label="Show banner 3"></button>
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+<!-- =====================================================
+     XENMARK CRAZY COLLECTION
+===================================================== -->
+<section class="crazy-collection" id="crazy-collection">
+    <div class="crazy-collection-grid"></div>
+    <div class="crazy-collection-noise"></div>
+    <div class="crazy-collection-ring ring-a"></div>
+    <div class="crazy-collection-ring ring-b"></div>
+
+    <div class="crazy-collection-head scroll-reveal">
+        <div>
+            <div class="crazy-collection-kicker">XN / COLLECTION OVERRIDE</div>
+            <h2>CRAZY <span>COLLECTION.</span></h2>
+        </div>
+        <div class="crazy-collection-copy">
+            A moving wall of custom apparel ideas — built to feel like a live Xenmark drop.
+        </div>
+    </div>
+
+    <div class="crazy-collection-rail scroll-reveal" id="crazyCollectionRail">
+        <article class="crazy-collection-card active" data-collection-index="0">
+            <div class="crazy-collection-image">
+                <img data-json-src="media_32" alt="Custom fashion collection" loading="lazy">
+                <div class="crazy-collection-image-scan"></div>
+            </div>
+            <div class="crazy-collection-meta"><span>DROP 01</span><span>XN / FORM</span></div>
+            <h3>NEON FORM</h3>
+            <p>Clean custom graphics with a sharp streetwear direction.</p>
+            <a href="#quote" class="crazy-collection-btn">BUILD THIS LOOK <span>→</span></a>
+        </article>
+
+        <article class="crazy-collection-card" data-collection-index="1">
+            <div class="crazy-collection-image">
+                <img data-json-src="media_33" alt="Streetwear apparel" loading="lazy">
+                <div class="crazy-collection-image-scan"></div>
+            </div>
+            <div class="crazy-collection-meta"><span>DROP 02</span><span>XN / STREET</span></div>
+            <h3>STREET CORE</h3>
+            <p>Bold apparel direction for brands, teams and personal drops.</p>
+            <a href="#quote" class="crazy-collection-btn">BUILD THIS LOOK <span>→</span></a>
+        </article>
+
+        <article class="crazy-collection-card" data-collection-index="2">
+            <div class="crazy-collection-image">
+                <img data-json-src="media_34" alt="Premium clothing" loading="lazy">
+                <div class="crazy-collection-image-scan"></div>
+            </div>
+            <div class="crazy-collection-meta"><span>DROP 03</span><span>XN / LAYER</span></div>
+            <h3>BLACK LAYER</h3>
+            <p>Hoodies and layered silhouettes made for stronger visual impact.</p>
+            <a href="#quote" class="crazy-collection-btn">BUILD THIS LOOK <span>→</span></a>
+        </article>
+
+        <article class="crazy-collection-card" data-collection-index="3">
+            <div class="crazy-collection-image">
+                <img data-json-src="media_35" alt="Custom team jersey" loading="lazy">
+                <div class="crazy-collection-image-scan"></div>
+            </div>
+            <div class="crazy-collection-meta"><span>DROP 04</span><span>XN / TEAM</span></div>
+            <h3>TEAM FORCE</h3>
+            <p>Team-ready custom pieces built around your identity.</p>
+            <a href="#quote" class="crazy-collection-btn">BUILD THIS LOOK <span>→</span></a>
+        </article>
+
+        <article class="crazy-collection-card" data-collection-index="4">
+            <div class="crazy-collection-image">
+                <img data-json-src="media_36" alt="Custom cap" loading="lazy">
+                <div class="crazy-collection-image-scan"></div>
+            </div>
+            <div class="crazy-collection-meta"><span>DROP 05</span><span>XN / HEAD</span></div>
+            <h3>CAP SIGNAL</h3>
+            <p>Take your branding beyond the shirt with a custom cap.</p>
+            <a href="#quote" class="crazy-collection-btn">BUILD THIS LOOK <span>→</span></a>
+        </article>
+
+        <article class="crazy-collection-card" data-collection-index="5">
+            <div class="crazy-collection-image">
+                <img data-json-src="media_37" alt="Custom apparel style" loading="lazy">
+                <div class="crazy-collection-image-scan"></div>
+            </div>
+            <div class="crazy-collection-meta"><span>DROP 06</span><span>XN / EDGE</span></div>
+            <h3>EDGE MODE</h3>
+            <p>A statement look for artwork that deserves attention.</p>
+            <a href="#quote" class="crazy-collection-btn">BUILD THIS LOOK <span>→</span></a>
+        </article>
+    </div>
+
+    <div class="crazy-collection-status">
+        <span>COLLECTION AUTO-SCAN</span>
+        <b id="crazyCollectionStatus">01 / 06</b>
+    </div>
+</section>
+
+<!-- =====================================================
+     LIMITED DROP COUNTDOWN
+===================================================== -->
+
+<section class="aman-limited" id="limited">
+
+    <div class="limited-grid"></div>
+    <div class="limited-scan"></div>
+
+    <div class="limited-ring lr1"></div>
+    <div class="limited-ring lr2"></div>
+    <div class="limited-ring lr3"></div>
+
+
+    <div class="aman-limited-content">
+
+
+        <div class="limited-head">
+
+            <span>
+                LIMITED DROP / 001
+            </span>
+
+            <span class="limited-live">
+                ● LIVE
+            </span>
+
+        </div>
+
+
+        <div class="limited-title">
+
+            <small>
+                THE NEXT DROP IS LOADING
+            </small>
+
+            <h2>
+                LIMITED
+                <span>DROP</span>
+            </h2>
+
+        </div>
+
+
+        <div class="aman-countdown">
+
+
+            <div class="aman-time">
+
+                <strong id="limitedDays">
+                    00
+                </strong>
+
+                <small>
+                    DAYS
+                </small>
+
+                <i></i>
+
+            </div>
+
+
+            <b class="aman-separator">
+                :
+            </b>
+
+
+            <div class="aman-time">
+
+                <strong id="limitedHours">
+                    00
+                </strong>
+
+                <small>
+                    HOURS
+                </small>
+
+                <i></i>
+
+            </div>
+
+
+            <b class="aman-separator">
+                :
+            </b>
+
+
+            <div class="aman-time">
+
+                <strong id="limitedMinutes">
+                    00
+                </strong>
+
+                <small>
+                    MINUTES
+                </small>
+
+                <i></i>
+
+            </div>
+
+
+            <b class="aman-separator">
+                :
+            </b>
+
+
+            <div class="aman-time">
+
+                <strong id="limitedSeconds">
+                    00
+                </strong>
+
+                <small>
+                    SECONDS
+                </small>
+
+                <i></i>
+
+            </div>
+
+        </div>
+
+
+        <div class="limited-foot">
+
+            <span>
+                ACCESS OPENS AUTOMATICALLY
+            </span>
+
+            <a
+                href="#quote"
+                class="cyber-btn"
+            >
+                JOIN THE DROP
+                <em>↗</em>
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     GALLERY
+===================================================== -->
+
+<section
+id="gallery">
+
+
+    <div class="section-head">
+
+
+        <div class="section-left reveal">
+
+
+            <div class="section-kicker">
+                XN VISUAL ARCHIVE
+            </div>
+
+
+            <h2 class="section-title">
+
+                THE
+                <span>GALLERY.</span>
+
+            </h2>
+
+
+            <p class="section-description">
+
+                Large visual panels with
+                automatic image changes.
+
+            </p>
+
+
+        </div>
+
+
+        <div class="slogan-box reveal">
+
+
+            <div class="slogan-label">
+                LIVE SLOGAN
+            </div>
+
+
+            <div
+            class="dynamic-slogan"
+            data-slogans="
+                SEE THE SIGNAL|
+                VISUALIZE THE POSSIBILITY|
+                THIS IS THE XN LANGUAGE|
+                EVERY PIECE HAS A STORY">
+
+                SEE THE SIGNAL
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+    <div class="image-gallery">
+
+
+        <div class="gallery-item reveal">
+
+
+            <img
+            class="auto-image"
+
+            data-json-src="media_38" data-json-set="media_38"
+
+            alt="Gallery 1">
+
+
+            <div class="gallery-code">
+                XN / 001
+            </div>
+
+
+        </div>
+
+
+        <div class="gallery-item reveal delay1">
+
+
+            <img
+            class="auto-image"
+
+            data-json-src="media_39" data-json-set="media_39"
+
+            alt="Gallery 2">
+
+
+            <div class="gallery-code">
+                XN / 002
+            </div>
+
+
+        </div>
+
+
+        <div class="gallery-item reveal delay2">
+
+
+            <img
+            class="auto-image"
+
+            data-json-src="media_40" data-json-set="media_40"
+
+            alt="Gallery 3">
+
+
+            <div class="gallery-code">
+                XN / 003
+            </div>
+
+
+        </div>
+
+
+        <div class="gallery-item reveal">
+
+
+            <img
+            class="auto-image"
+
+            data-json-src="media_41" data-json-set="media_41"
+
+            alt="Gallery 4">
+
+
+            <div class="gallery-code">
+                XN / 004
+            </div>
+
+
+        </div>
+
+
+        <div class="gallery-item reveal delay1">
+
+
+            <img
+            class="auto-image"
+
+            data-json-src="media_42" data-json-set="media_42"
+
+            alt="Gallery 5">
+
+
+            <div class="gallery-code">
+                XN / 005
+            </div>
+
+
+        </div>
+
+
+        <div class="gallery-item reveal delay2">
+
+
+            <img
+            class="auto-image"
+
+            data-json-src="media_43" data-json-set="media_43"
+
+            alt="Gallery 6">
+
+
+            <div class="gallery-code">
+                XN / 006
+            </div>
+
+
+        </div>
+
+
+        <div class="cyber-card reveal delay2">
+            <div class="card-frame">
+                <img class="auto-image"
+                data-json-src="media_44" data-json-set="media_44"
+                alt="Sports jersey">
+            </div>
+            <div class="card-left-bar"></div>
+            <div class="card-right-bar"></div>
+            <div class="card-number">04</div>
+            <div class="card-barcode"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+            <div class="card-tech">SPORT / XN / TEAM</div>
+            <div class="card-red-block"></div>
+            <div class="card-content">
+                <small>VISUAL / 04</small>
+                <h3>TEAM<br>FORCE</h3>
+                <p>Custom sports pieces for teams, events and groups.</p>
+                <a href="#quote" class="card-link">EXPLORE <span>→</span></a>
+            </div>
+        </div>
+
+        <div class="cyber-card reveal delay3">
+            <div class="card-frame">
+                <img class="auto-image"
+                data-json-src="media_45" data-json-set="media_45"
+                alt="Custom cap">
+            </div>
+            <div class="card-left-bar"></div>
+            <div class="card-right-bar"></div>
+            <div class="card-number">05</div>
+            <div class="card-barcode"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+            <div class="card-tech">ACCESSORY / XN / CAP</div>
+            <div class="card-red-block"></div>
+            <div class="card-content">
+                <small>VISUAL / 05</small>
+                <h3>BLACK<br>FRAME</h3>
+                <p>Clean headwear with custom embroidery and identity.</p>
+                <a href="#quote" class="card-link">EXPLORE <span>→</span></a>
+            </div>
+        </div>
+
+
+    </div>
+
+
+</section>
+
+
+<!-- =====================================================
+     FEATURES
+===================================================== -->
+
+<section>
+
+
+    <div class="section-head">
+
+
+        <div class="section-left reveal">
+
+
+            <div class="section-kicker">
+                WHY XENMARK
+            </div>
+
+
+            <h2 class="section-title">
+
+                BUILT
+                <span>DIFFERENT.</span>
+
+            </h2>
+
+
+        </div>
+
+
+        <div class="slogan-box reveal">
+
+
+            <div class="slogan-label">
+                LIVE SLOGAN
+            </div>
+
+
+            <div
+            class="dynamic-slogan"
+            data-slogans="
+                CUSTOM IS THE NEW STANDARD|
+                MAKE THE LOOK YOURS|
+                YOUR BRAND NEEDS A SIGNAL|
+                ORDINARY IS NOT THE GOAL">
+
+                CUSTOM IS THE NEW STANDARD
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+    <div class="features">
+
+
+        <div class="feature reveal">
+
+
+            <div class="feature-number">
+                FEATURE / 01
+            </div>
+
+
+            <h3>
+                SINGLE OR BULK
+            </h3>
+
+
+            <p>
+                One custom piece or
+                a larger order.
+            </p>
+
+
+        </div>
+
+
+        <div class="feature reveal delay1">
+
+
+            <div class="feature-number">
+                FEATURE / 02
+            </div>
+
+
+            <h3>
+                DESIGN YOUR WAY
+            </h3>
+
+
+            <p>
+                Bring your artwork,
+                logo or concept.
+            </p>
+
+
+        </div>
+
+
+        <div class="feature reveal delay2">
+
+
+            <div class="feature-number">
+                FEATURE / 03
+            </div>
+
+
+            <h3>
+                MADE FOR BRANDS
+            </h3>
+
+
+            <p>
+                Companies, colleges,
+                teams and events.
+            </p>
+
+
+        </div>
+
+
+    </div>
+
+
+</section>
+
+
+<!-- =====================================================
+     CUSTOMIZER
+===================================================== -->
+
+<section
+class="customizer"
+id="customizer">
+
+
+    <div class="section-head">
+
+
+        <div class="section-left reveal">
+
+
+            <div class="section-kicker">
+                CUSTOM MODE
+            </div>
+
+
+            <h2 class="section-title">
+
+                YOUR
+                <span>RULES.</span>
+
+            </h2>
+
+
+        </div>
+
+
+        <div class="slogan-box reveal">
+
+
+            <div class="slogan-label">
+                LIVE SLOGAN
+            </div>
+
+
+            <div
+            class="dynamic-slogan"
+            data-slogans="
+                CHOOSE IT. CHANGE IT. OWN IT.|
+                BUILD YOUR VISUAL IDENTITY|
+                MAKE THE BASE YOURS|
+                YOUR DESIGN YOUR WAY">
+
+                CHOOSE IT. CHANGE IT. OWN IT.
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+    <div class="customizer-grid">
+
+
+        <div class="customizer-copy reveal">
+
+
+            <h2>
+
+                BUILD<br>
+                YOUR<br>
+                <span>PIECE.</span>
+
+            </h2>
+
+
+            <p>
+
+                Choose the base and the
+                customization method you want,
+                then send your requirements.
+
+            </p>
+
+
+            <div class="option-label">
+                APPAREL
+            </div>
+
+
+            <div class="options">
+
+                <button class="option active">
+                    T-SHIRT
+                </button>
+
+                <button class="option">
+                    HOODIE
+                </button>
+
+                <button class="option">
+                    JERSEY
+                </button>
+
+                <button class="option">
+                    CAP
+                </button>
+
+            </div>
+
+
+            <div class="option-label">
+                TREATMENT
+            </div>
+
+
+            <div class="options">
+
+                <button class="option active">
+                    DTF
+                </button>
+
+                <button class="option">
+                    EMBROIDERY
+                </button>
+
+                <button class="option">
+                    BOTH
+                </button>
+
+            </div>
+
+
+            <a
+            href="#quote"
+            class="cyber-btn">
+
+                BUILD MY ORDER
+
+            </a>
+
+
+        </div>
+
+
+        <div class="customizer-image reveal">
+
+
+            <img
+            class="customizer-preview-image"
+            id="customizerPreview"
+            data-json-src="media_46"
+            alt="Custom fashion">
+
+
+            <div class="customizer-label">
+                XN / CUSTOM MODE
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+</section>
+
+
+<!-- =====================================================
+     QUOTE
+===================================================== -->
+
+<section
+class="quote"
+id="quote">
+
+
+    <div class="section-head">
+
+
+        <div class="section-left reveal">
+
+
+            <div class="section-kicker">
+                START A PROJECT
+            </div>
+
+
+            <h2 class="section-title">
+
+                LET'S MAKE
+                <span>SOMETHING.</span>
+
+            </h2>
+
+
+        </div>
+
+
+        <div class="slogan-box reveal">
+
+
+            <div class="slogan-label">
+                LIVE SLOGAN
+            </div>
+
+
+            <div
+            class="dynamic-slogan"
+            data-slogans="
+                TELL US WHAT YOU SEE|
+                START THE NEXT PIECE|
+                YOUR IDEA STARTS HERE|
+                LET'S BUILD YOUR APPAREL">
+
+                TELL US WHAT YOU SEE
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+    <div class="quote-grid">
+
+
+        <div class="quote-copy reveal">
+
+
+            <p>
+
+                Tell us what you want to create
+                and we'll prepare the details
+                for WhatsApp.
+
+            </p>
+
+
+            <div class="quote-list">
+
+
+                <div class="quote-item">
+                    Custom apparel
+                </div>
+
+
+                <div class="quote-item">
+                    Bulk orders
+                </div>
+
+
+                <div class="quote-item">
+                    Brand apparel
+                </div>
+
+
+                <div class="quote-item">
+                    Sports teams
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+
+        <div class="reveal">
+
+
+            <form
+            class="form"
+            id="quoteForm">
+
+                <div class="form-field">
+                    <span>01</span>
+                    <input
+                    type="text"
+                    id="name"
+                    placeholder="Your Name"
+                    required>
+                </div>
+
+                <div class="form-field">
+                    <span>02</span>
+                    <input
+                    type="email"
+                    id="email"
+                    placeholder="Your Email"
+                    required>
+                </div>
+
+                <div class="form-field">
+                    <span>03</span>
+                    <input
+                    type="tel"
+                    id="phone"
+                    placeholder="Phone Number"
+                    required>
+                </div>
+
+                <div class="form-field">
+                    <span>04</span>
+                    <select id="product" required>
+                        <option value="">Select Product</option>
+                        <option>T-Shirt</option>
+                        <option>Hoodie</option>
+                        <option>Jersey</option>
+                        <option>Cap</option>
+                        <option>Other</option>
+                    </select>
+                </div>
+
+                <div class="form-field">
+                    <span>05</span>
+                    <select id="type" required>
+                        <option value="">Select Customization</option>
+                        <option>DTF Printing</option>
+                        <option>Embroidery</option>
+                        <option>DTF + Embroidery</option>
+                    </select>
+                </div>
+
+                <div class="form-field form-field-full">
+                    <span>06</span>
+                    <textarea
+                    id="message"
+                    placeholder="Tell us about your design..."
+                    required></textarea>
+                </div>
+
+                <button
+                type="submit"
+                class="cyber-btn full">
+                    SEND ON WHATSAPP
+                    <span>↗</span>
+                </button>
+
+            </form>
+
+
+        </div>
+
+
+    </div>
+
+
+</section>
+
+
+<!-- =====================================================
+     FAQ
+===================================================== -->
+
+<section>
+
+
+    <div class="section-head">
+
+
+        <div class="section-left reveal">
+
+
+            <div class="section-kicker">
+                QUICK ANSWERS
+            </div>
+
+
+            <h2 class="section-title">
+
+                FAQ
+                <span>/ XN</span>
+
+            </h2>
+
+
+        </div>
+
+
+        <div class="slogan-box reveal">
+
+
+            <div class="slogan-label">
+                LIVE SLOGAN
+            </div>
+
+
+            <div
+            class="dynamic-slogan"
+            data-slogans="
+                QUESTIONS ANSWERED|
+                KNOW THE PROCESS|
+                DESIGN WITH CONFIDENCE|
+                READY WHEN YOU ARE">
+
+                QUESTIONS ANSWERED
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+    <div class="faq">
+
+
+        <div class="faq-item reveal">
+
+
+            <button class="faq-question">
+
+                <span>
+                    CAN I SEND MY OWN DESIGN?
+                </span>
+
+                <span class="faq-icon">
+                    +
+                </span>
+
+            </button>
+
+
+            <div class="faq-answer">
+
+                <p>
+
+                    Yes. Send your artwork,
+                    logo, reference or concept
+                    through the enquiry form.
+
+                </p>
+
+            </div>
+
+
+        </div>
+
+
+        <div class="faq-item reveal">
+
+
+            <button class="faq-question">
+
+                <span>
+                    DO YOU HANDLE BULK ORDERS?
+                </span>
+
+                <span class="faq-icon">
+                    +
+                </span>
+
+            </button>
+
+
+            <div class="faq-answer">
+
+                <p>
+
+                    Yes. The enquiry form can
+                    be used for larger company,
+                    college, event or team orders.
+
+                </p>
+
+            </div>
+
+
+        </div>
+
+
+        <div class="faq-item reveal">
+
+
+            <button class="faq-question">
+
+                <span>
+                    WHAT CAN I CUSTOMIZE?
+                </span>
+
+                <span class="faq-icon">
+                    +
+                </span>
+
+            </button>
+
+
+            <div class="faq-answer">
+
+                <p>
+
+                    T-shirts, hoodies, jerseys,
+                    caps and other apparel can
+                    be discussed through your enquiry.
+
+                </p>
+
+            </div>
+
+
+        </div>
+
+
+        <div class="faq-item reveal">
+            <button class="faq-question">
+                <span>HOW DOES THE CUSTOMIZATION PROCESS WORK?</span>
+                <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+                <p>Choose the product and customization method that fits your idea, then submit your details through the enquiry form. We use your requirements to understand the artwork, placement, product and finish before discussing the order with you.</p>
+            </div>
+        </div>
+
+        <div class="faq-item reveal">
+            <button class="faq-question">
+                <span>WHICH FILES CAN I SEND FOR MY DESIGN?</span>
+                <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+                <p>You can share your logo, artwork, reference image or design concept. If you already have a finished digital design, send the clearest version available so the artwork can be reviewed properly before production.</p>
+            </div>
+        </div>
+
+        <div class="faq-item reveal">
+            <button class="faq-question">
+                <span>CAN I COMBINE DTF AND EMBROIDERY?</span>
+                <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+                <p>Yes. The enquiry form includes a DTF + Embroidery option. This is useful when different parts of the same apparel piece need different treatments, and the final approach can be discussed after reviewing your design.</p>
+            </div>
+        </div>
+
+        <div class="faq-item reveal">
+            <button class="faq-question">
+                <span>DO YOU MAKE APPAREL FOR TEAMS, EVENTS OR BRANDS?</span>
+                <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+                <p>Yes. Xenmark can be used for individual custom pieces as well as brand apparel, college groups, sports teams, events and larger orders. Share the product, design and requirements in the form so the order can be discussed in detail.</p>
+            </div>
+        </div>
+
+        <div class="faq-item reveal">
+            <button class="faq-question">
+                <span>HOW DO I START AN ORDER?</span>
+                <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+                <p>Start by selecting a product or customization style, then use the enquiry form to provide your name, email, phone number, product, customization method and design details. The form prepares the information for WhatsApp so you can continue the conversation.</p>
+            </div>
+        </div>
+
+
+    </div>
+
+
+</section>
+
+
+<!-- =====================================================
+     FINAL CTA
+===================================================== -->
+
+<section
+class="final-cta">
+
+
+    <div class="final-ring one"></div>
+
+    <div class="final-ring two"></div>
+
+    <div class="final-ring three"></div>
+
+
+    <div class="final-content reveal">
+
+
+        <small>
+            XN / FINAL SIGNAL
+        </small>
+
+
+        <h2>
+
+            MAKE IT
+            <span>YOURS.</span>
+
+        </h2>
+
+
+        <div
+        class="final-slogan"
+        id="finalSlogan">
+
+            DON'T WEAR ORDINARY
+
+        </div>
+
+
+        <a
+        href="#quote"
+        class="cyber-btn">
+
+            START YOUR PROJECT
+
+        </a>
+
+
+    </div>
+
+
+</section>
+
+
+<!-- =====================================================
+     CONTACT POPUP
+===================================================== -->
+
+<div
+class="contact-popup"
+id="contactPopup">
+
+
+    <div class="contact-box">
+
+
+        <div
+        class="contact-close"
+        onclick="closeContact()">
+
+            ×
+
+        </div>
+
+
+        <h2>
+            LET'S TALK.
+        </h2>
+
+
+        <p>
+            Choose your contact channel.
+        </p>
+
+
+        <div class="contact-links">
+
+
+            <a
+            href="https://wa.me/6387731661"
+            target="_blank"
+            class="contact-link">
+
+                <span>
+                    WHATSAPP
+                </span>
+
+                <span>
+                    →
+                </span>
+
+            </a>
+
+
+            <a
+            href="mailto:your@email.com"
+            class="contact-link">
+
+                <span>
+                    EMAIL
+                </span>
+
+                <span>
+                    →
+                </span>
+
+            </a>
+
+
+            <a
+            href="https://instagram.com/"
+            target="_blank"
+            class="contact-link">
+
+                <span>
+                    INSTAGRAM
+                </span>
+
+                <span>
+                    →
+                </span>
+
+            </a>
+
+
+            <a
+            href="tel:+6387731661"
+            class="contact-link">
+
+                <span>
+                    CALL
+                </span>
+
+                <span>
+                    →
+                </span>
+
+            </a>
+
+
+        </div>
+
+
+    </div>
+
+
+</div>
+
+
+<!-- =====================================================
+     WHATSAPP
+===================================================== -->
+
+<a
+href="https://wa.me/6387731661"
+target="_blank"
+class="whatsapp"
+aria-label="WhatsApp">
+
+    <i class="fa-brands fa-whatsapp"></i>
+
+</a>
+
+
+<!-- =====================================================
+     TOP
+===================================================== -->
+
+<button
+class="top-btn"
+id="topBtn">
+
+    ↑
+
+</button>
+
+
+<!-- =====================================================
+     FOOTER / MODIFIED
+===================================================== -->
+
+<footer class="aman-footer">
+
+    <div class="aman-footer-grid"></div>
+    <div class="aman-footer-scan"></div>
+
+
+    <div class="aman-footer-top">
+
+        <span>
+            XN_SYSTEM / TERMINATED
+        </span>
+
+        <span>
+            END OF EXPERIENCE
+        </span>
+
+        <span>
+            © <span id="year"></span> XENMARK
+        </span>
+
+    </div>
+
+
+    <div class="aman-footer-main">
+
+
+        <div class="aman-footer-brand">
+
+            <small>
+                CUSTOM APPAREL / XENMARK
+            </small>
+
+            <div class="aman-footer-logo">
+                XENMARK
+            </div>
+
+            <p>
+                Custom embroidery, DTF printing,
+                sports jerseys and apparel designed
+                around your visual identity.
+            </p>
+
+
+            <div class="aman-footer-social">
+
+                <a href="https://instagram.com/" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                    INSTAGRAM
+                </a>
+
+                <a href="https://wa.me/6387731661" target="_blank">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    WHATSAPP
+                </a>
+
+                <a href="#">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    FACEBOOK
+                </a>
+
+                <a href="#">
+                    <i class="fa-brands fa-x-twitter"></i>
+                    X / TWITTER
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="aman-footer-core">
+
+            <div class="footer-core-ring core-1"></div>
+            <div class="footer-core-ring core-2"></div>
+            <div class="footer-core-ring core-3"></div>
+
+            <div class="aman-footer-x">
+                X
+            </div>
+
+            <span class="core-label top">
+                XENMARK
+            </span>
+
+            <span class="core-label bottom">
+                CREATE / PRINT / WEAR
+            </span>
+
+        </div>
+
+
+        <div class="aman-footer-links">
+
+            <div class="footer-col">
+
+                <span>
+                    EXPLORE
+                </span>
+
+                <a href="#home">HOME</a>
+                <a href="#services">SERVICES</a>
+                <a href="#collection">COLLECTION</a>
+                <a href="#process">PROCESS</a>
+                <a href="#gallery">GALLERY</a>
+
+            </div>
+
+
+            <div class="footer-col">
+
+                <span>
+                    CONNECT
+                </span>
+
+                <a href="#crazy">CRAZY DROP</a>
+                <a href="#limited">LIMITED DROP</a>
+                <a href="#quote">GET A QUOTE</a>
+                <a href="mailto:your@email.com">EMAIL</a>
+                <a href="tel:+6387731661">CALL</a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="aman-footer-marquee">
+
+        <div>
+            XENMARK • CUSTOM APPAREL • DTF PRINTING • EMBROIDERY • JERSEYS • MAKE YOUR MARK • XENMARK • CUSTOM APPAREL • DTF PRINTING • EMBROIDERY • JERSEYS • MAKE YOUR MARK •
+        </div>
+
+    </div>
+
+
+    <div class="aman-footer-bottom">
+
+        <span>
+            U DREAM V DESIGN
+        </span>
+
+        <span>
+            CUSTOM / PRINT / EMBROIDER / WEAR
+        </span>
+
+        <a href="#home">
+            BACK TO TOP ↑
+        </a>
+
+    </div>
+
+</footer>
+
+
+<script src="script.js"></script>
+</body>
+
+</html>
