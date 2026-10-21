@@ -9967,3 +9967,127 @@ section{
         filter:none !important;
     }
 }
+
+/* =========================================================
+   MOBILE PERFORMANCE MODE — FIXED
+   Phone-only: collapse decorative animations, while preserving
+   scroll reveals and both existing Xenmark loader animations.
+========================================================= */
+@media (max-width: 700px) {
+    /*
+      Make other CSS animations finish immediately instead of deleting them.
+      This is important because some sections use keyframes to reach their
+      visible/final state (for example, fade-up text and product cards).
+    */
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-delay: 0ms !important;
+        animation-iteration-count: 1 !important;
+        animation-fill-mode: both !important;
+        transition-duration: 0.01ms !important;
+        transition-delay: 0ms !important;
+    }
+
+    /* Keep scroll-triggered animations, but remove costly blur. */
+    .reveal,
+    .reveal.show {
+        transition: opacity 0.55s ease, transform 0.55s ease !important;
+        transition-delay: 0ms !important;
+    }
+
+    .scroll-reveal,
+    .scroll-reveal.is-visible {
+        filter: none !important;
+        transition: opacity 0.55s ease, transform 0.55s ease !important;
+        transition-delay: 0ms !important;
+    }
+
+    .scroll-reveal .why-xenmark-item,
+    .scroll-reveal .crazy-collection-card {
+        transition-delay: 0ms !important;
+    }
+
+    /* Keep the original XENMARK loader animation visible on mobile. */
+    .loader {
+        transition: opacity 0.9s ease, visibility 0.9s ease !important;
+    }
+    .loader-orbit {
+        animation-name: loaderSpin !important;
+        animation-duration: 9s !important;
+        animation-timing-function: linear !important;
+        animation-iteration-count: infinite !important;
+        animation-delay: 0ms !important;
+    }
+    .loader-orbit.two {
+        animation-duration: 6s !important;
+        animation-direction: reverse !important;
+    }
+    .loader-orbit.three {
+        animation-duration: 18s !important;
+    }
+    .loader-title {
+        animation-name: loaderPulse !important;
+        animation-duration: 2s !important;
+        animation-iteration-count: infinite !important;
+    }
+    .loader-title::before {
+        animation-name: loaderSlice !important;
+        animation-duration: 1.7s !important;
+        animation-iteration-count: infinite !important;
+    }
+    .loader-title::after {
+        animation-name: loaderSliceTwo !important;
+        animation-duration: 1.4s !important;
+        animation-iteration-count: infinite !important;
+    }
+    .loader-bar span {
+        animation-name: loaderBar !important;
+        animation-duration: 1.15s !important;
+        animation-iteration-count: infinite !important;
+    }
+
+    /* Keep the second XENMARK logo loader and its progress animation too. */
+    .xenmark-loader {
+        transition: opacity 0.7s ease, visibility 0.7s ease !important;
+    }
+    .xenmark-loader-grid {
+        animation-name: xnLoaderGrid !important;
+        animation-duration: 2.8s !important;
+        animation-iteration-count: infinite !important;
+    }
+    .xenmark-loader-noise {
+        animation-name: xnLoaderNoise !important;
+        animation-duration: 0.15s !important;
+        animation-timing-function: steps(2) !important;
+        animation-iteration-count: infinite !important;
+    }
+    .xenmark-loader-scan {
+        animation-name: xnLoaderScan !important;
+        animation-duration: 1.6s !important;
+        animation-timing-function: linear !important;
+        animation-iteration-count: infinite !important;
+    }
+    .xenmark-loader-logo {
+        animation-name: xnLoaderGlitch !important;
+        animation-duration: 1.1s !important;
+        animation-timing-function: steps(2) !important;
+        animation-iteration-count: infinite !important;
+    }
+    .xenmark-loader-logo::before {
+        animation-name: xnLoaderSliceA !important;
+        animation-duration: 1.2s !important;
+        animation-timing-function: steps(2) !important;
+        animation-iteration-count: infinite !important;
+    }
+    .xenmark-loader-logo::after {
+        animation-name: xnLoaderSliceB !important;
+        animation-duration: 0.9s !important;
+        animation-timing-function: steps(2) !important;
+        animation-iteration-count: infinite !important;
+    }
+    .xenmark-loader-progress span {
+        transition: width 0.08s linear !important;
+    }
+}
